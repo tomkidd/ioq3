@@ -677,10 +677,7 @@
 					"\"$(SRCROOT)/../../code/jpeg-8c\"",
 					"\"$(SRCROOT)/../../code/SDL2/include\"",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../code/libs/macosx\"",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/ioquake3-dqrqeayrbnbwitdwenoviousqwyc/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../code/libs/macosx\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -698,10 +695,7 @@
 					"\"$(SRCROOT)/../../code/jpeg-8c\"",
 					"\"$(SRCROOT)/../../code/SDL2/include\"",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../code/libs/macosx\"",
-					"\"$(SRCROOT)/../../../../../../Library/Developer/Xcode/DerivedData/ioquake3-dqrqeayrbnbwitdwenoviousqwyc/Build/Products/Debug\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../code/libs/macosx\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
