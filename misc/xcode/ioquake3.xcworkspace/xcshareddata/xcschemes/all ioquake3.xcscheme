@@ -126,10 +126,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2758BA56179059C1007F6582"
-               BuildableName = "libspeex.a"
-               BlueprintName = "speex"
-               ReferencedContainer = "container:speex.xcodeproj">
+               BlueprintIdentifier = "A1665093218BF75B0086B74B"
+               BuildableName = "libopus.dylib"
+               BlueprintName = "opus"
+               ReferencedContainer = "container:opus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -182,6 +182,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2735319414D125FD00EB7BD6"
+            BuildableName = "cgame.dylib"
+            BlueprintName = "cgame"
+            ReferencedContainer = "container:cgame.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

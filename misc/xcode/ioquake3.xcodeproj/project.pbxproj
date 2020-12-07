@@ -6,30 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		2772B8021790EBE0004CCF57 /* all ioquake3 */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2772B8031790EBE0004CCF57 /* Build configuration list for PBXAggregateTarget "all ioquake3" */;
-			buildPhases = (
-			);
-			dependencies = (
-				2772B80D1790ECAB004CCF57 /* PBXTargetDependency */,
-			);
-			name = "all ioquake3";
-			productName = "all ioquake3";
-		};
-		2772B8081790EC7F004CCF57 /* all game */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2772B8091790EC7F004CCF57 /* Build configuration list for PBXAggregateTarget "all game" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = "all game";
-			productName = "all game";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		2711BE7A14D13696005EB142 /* sv_bot.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7014D13696005EB142 /* sv_bot.c */; };
 		2711BE7B14D13696005EB142 /* sv_ccmds.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7114D13696005EB142 /* sv_ccmds.c */; };
@@ -106,25 +82,18 @@
 		27AAD06F178E04FF0093DFC0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AAD06E178E04FF0093DFC0 /* OpenAL.framework */; };
 		27AAD071178E05290093DFC0 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AAD070178E05290093DFC0 /* libcurl.dylib */; };
 		27AAD073178E052F0093DFC0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AAD072178E052F0093DFC0 /* libz.dylib */; };
+		A1203449257C937600CA384C /* renderer_opengl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1203448257C937600CA384C /* renderer_opengl2.dylib */; };
+		A120344E257C93AC00CA384C /* cgame.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A120344D257C93AC00CA384C /* cgame.dylib */; };
+		A1203453257C93C800CA384C /* game.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1203452257C93C800CA384C /* game.dylib */; };
+		A1203458257C93E500CA384C /* q3_ui.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1203457257C93E500CA384C /* q3_ui.dylib */; };
 		A1403E58256F15E700DFAD74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1403E57256F15E700DFAD74 /* Images.xcassets */; };
 		A163B25A2193AEA100C48278 /* libopus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1665973219341DF0086B74B /* libopus.dylib */; };
 		A163B25C2193AF1E00C48278 /* renderer_opengl1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B25B2193AF1E00C48278 /* renderer_opengl1.dylib */; };
-		A163B2602193D67700C48278 /* renderer_opengl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B25F2193D67700C48278 /* renderer_opengl2.dylib */; };
 		A16659662191052E0086B74B /* libSDL2main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A16659652191052E0086B74B /* libSDL2main.a */; };
 		A1665968219105430086B74B /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1665967219105430086B74B /* libSDL2-2.0.0.dylib */; };
 		A1665971219107490086B74B /* sys_autoupdater.c in Sources */ = {isa = PBXBuildFile; fileRef = A1665970219107490086B74B /* sys_autoupdater.c */; };
 		A16659722192A3DD0086B74B /* libSDL2-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A1665967219105430086B74B /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2772B80C1790ECAB004CCF57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 273531E214D1275D00EB7BD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 273531EA14D1275D00EB7BD6;
-			remoteInfo = ioquake3;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A166596F219105E00086B74B /* Embed Libraries */ = {
@@ -294,6 +263,10 @@
 		27B0E9F21743E0A800DB1F32 /* null_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_main.c; sourceTree = "<group>"; };
 		27B0E9F31743E0A800DB1F32 /* null_net.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_net.c; sourceTree = "<group>"; };
 		27B0E9F41743E0A800DB1F32 /* null_snddma.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_snddma.c; sourceTree = "<group>"; };
+		A1203448257C937600CA384C /* renderer_opengl2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = renderer_opengl2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A120344D257C93AC00CA384C /* cgame.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = cgame.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1203452257C93C800CA384C /* game.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = game.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1203457257C93E500CA384C /* q3_ui.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = q3_ui.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1403E57256F15E700DFAD74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ioquake3/Images.xcassets; sourceTree = "<group>"; };
 		A163B25B2193AF1E00C48278 /* renderer_opengl1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = renderer_opengl1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A163B25F2193D67700C48278 /* renderer_opengl2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = renderer_opengl2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -392,16 +365,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A163B2602193D67700C48278 /* renderer_opengl2.dylib in Frameworks */,
 				A163B25C2193AF1E00C48278 /* renderer_opengl1.dylib in Frameworks */,
 				A163B25A2193AEA100C48278 /* libopus.dylib in Frameworks */,
+				A1203449257C937600CA384C /* renderer_opengl2.dylib in Frameworks */,
+				A1203453257C93C800CA384C /* game.dylib in Frameworks */,
 				A1665968219105430086B74B /* libSDL2-2.0.0.dylib in Frameworks */,
 				A16659662191052E0086B74B /* libSDL2main.a in Frameworks */,
 				273531F014D1275D00EB7BD6 /* Cocoa.framework in Frameworks */,
 				2758BB3317905B8F007F6582 /* IOKit.framework in Frameworks */,
 				27AAD06F178E04FF0093DFC0 /* OpenAL.framework in Frameworks */,
 				2735379E14D8F13E000D6E73 /* botlib.a in Frameworks */,
+				A1203458257C93E500CA384C /* q3_ui.dylib in Frameworks */,
 				27AAD071178E05290093DFC0 /* libcurl.dylib in Frameworks */,
+				A120344E257C93AC00CA384C /* cgame.dylib in Frameworks */,
 				27AAD073178E052F0093DFC0 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +580,10 @@
 		273531EE14D1275D00EB7BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1203457257C93E500CA384C /* q3_ui.dylib */,
+				A1203452257C93C800CA384C /* game.dylib */,
+				A120344D257C93AC00CA384C /* cgame.dylib */,
+				A1203448257C937600CA384C /* renderer_opengl2.dylib */,
 				A163B25F2193D67700C48278 /* renderer_opengl2.dylib */,
 				A163B25B2193AF1E00C48278 /* renderer_opengl1.dylib */,
 				A1665973219341DF0086B74B /* libopus.dylib */,
@@ -852,8 +832,6 @@
 			projectRoot = "";
 			targets = (
 				273531EA14D1275D00EB7BD6 /* ioquake3 */,
-				2772B8021790EBE0004CCF57 /* all ioquake3 */,
-				2772B8081790EC7F004CCF57 /* all game */,
 			);
 		};
 /* End PBXProject section */
@@ -979,14 +957,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2772B80D1790ECAB004CCF57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 273531EA14D1275D00EB7BD6 /* ioquake3 */;
-			targetProxy = 2772B80C1790ECAB004CCF57 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2735320714D1275D00EB7BD6 /* Debug */ = {
@@ -1166,38 +1136,6 @@
 			};
 			name = Release;
 		};
-		2772B8041790EBE0004CCF57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2772B8051790EBE0004CCF57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		2772B80A1790EC7F004CCF57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		2772B80B1790EC7F004CCF57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1215,24 +1153,6 @@
 			buildConfigurations = (
 				2735320A14D1275D00EB7BD6 /* Debug */,
 				2735320B14D1275D00EB7BD6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2772B8031790EBE0004CCF57 /* Build configuration list for PBXAggregateTarget "all ioquake3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2772B8041790EBE0004CCF57 /* Debug */,
-				2772B8051790EBE0004CCF57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2772B8091790EC7F004CCF57 /* Build configuration list for PBXAggregateTarget "all game" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2772B80A1790EC7F004CCF57 /* Debug */,
-				2772B80B1790EC7F004CCF57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
