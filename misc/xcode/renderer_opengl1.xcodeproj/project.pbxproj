@@ -45,6 +45,7 @@
 		274FAC84178FB1C800B17C7A /* tr_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC78178FB1C800B17C7A /* tr_noise.c */; };
 		274FAC88178FB1D600B17C7A /* libjpeg8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FAC87178FB1D600B17C7A /* libjpeg8.a */; };
 		A163B25E2193D5F800C48278 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B25D2193D5F800C48278 /* libSDL2-2.0.0.dylib */; };
+		A1C92454257DD849008997E5 /* libjpeg8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FAC87178FB1D600B17C7A /* libjpeg8.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 			files = (
 				A163B25E2193D5F800C48278 /* libSDL2-2.0.0.dylib in Frameworks */,
 				274FAC88178FB1D600B17C7A /* libjpeg8.a in Frameworks */,
+				A1C92454257DD849008997E5 /* libjpeg8.a in Frameworks */,
 				274FAC6B178FB17E00B17C7A /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
