@@ -17,9 +17,6 @@
          location = "group:game.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:q3_ui.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:ui.xcodeproj">
       </FileRef>
    </Group>
