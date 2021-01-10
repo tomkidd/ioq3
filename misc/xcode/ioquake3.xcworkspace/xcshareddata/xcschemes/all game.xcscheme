@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273531B314D126C300EB7BD6"
-               BuildableName = "game.dylib"
+               BuildableName = "qagame.dylib"
                BlueprintName = "game - baseq3"
                ReferencedContainer = "container:game.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A137C98D258DCD55009AC639"
-               BuildableName = "game.dylib"
+               BuildableName = "qagame.dylib"
                BlueprintName = "game - missionpack"
                ReferencedContainer = "container:game.xcodeproj">
             </BuildableReference>
@@ -71,7 +71,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273531D814D1272300EB7BD6"
-               BuildableName = "uix86_64.dylib"
+               BuildableName = "ui.dylib"
                BlueprintName = "ui - missionpack"
                ReferencedContainer = "container:ui.xcodeproj">
             </BuildableReference>
