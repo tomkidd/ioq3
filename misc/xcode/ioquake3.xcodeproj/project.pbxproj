@@ -786,7 +786,6 @@
 			buildPhases = (
 				273531E714D1275D00EB7BD6 /* Sources */,
 				273531E814D1275D00EB7BD6 /* Frameworks */,
-				274FAC8C178FB4C500B17C7A /* Run Script - Bump Version Number */,
 				2758BB35179061C1007F6582 /* Run Script - Copy Renderer & Game Dynamic Libraries, Symlink Architecture */,
 				273531E914D1275D00EB7BD6 /* Resources */,
 				A166596F219105E00086B74B /* Embed Libraries */,
@@ -840,20 +839,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		274FAC8C178FB4C500B17C7A /* Run Script - Bump Version Number */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script - Bump Version Number";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#\n# update the version from q_shared.h\n#\nPRODUCT_VERSION_FILE=\"${SRCROOT}/../../code/qcommon/q_shared.h\"\nPRODUCT_VERSION=`cat \"${PRODUCT_VERSION_FILE}\" | grep \"#define PRODUCT_VERSION\" | awk '{print $3}' | sed 's/\\\"//;s/\\\"$//'`\nGIT_VERSION=\"\"\n\nif [ \"${PRODUCT_VERSION}\" != \"\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString $PRODUCT_VERSION\" \"${INFOPLIST_FILE}\"\nfi\n\n#\n# update the git version\n#\nif [ -e \"${SRCROOT}/../../.git\" ]; then\n    GIT_VERSION=`git show -s --pretty=format:%h-%ad --date=short`\n\n    if [ \"${GIT_VERSION}\" != \"\" ]; then\n        /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $GIT_VERSION\" \"${INFOPLIST_FILE}\"\n    fi\nfi\n";
-		};
 		2758BB35179061C1007F6582 /* Run Script - Copy Renderer & Game Dynamic Libraries, Symlink Architecture */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
