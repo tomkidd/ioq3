@@ -44,7 +44,7 @@
 		274FAC83178FB1C800B17C7A /* tr_image_tga.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC77178FB1C800B17C7A /* tr_image_tga.c */; };
 		274FAC84178FB1C800B17C7A /* tr_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC78178FB1C800B17C7A /* tr_noise.c */; };
 		274FAC88178FB1D600B17C7A /* libjpeg8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FAC87178FB1D600B17C7A /* libjpeg8.a */; };
-		A11507F925B52132000CF482 /* libSDL2-2.0.14.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A11507F825B52132000CF482 /* libSDL2-2.0.14.dylib */; };
+		A115082825B533E3000CF482 /* libSDL2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A115082725B533E3000CF482 /* libSDL2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +97,7 @@
 		274FAC7A178FB1C800B17C7A /* tr_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tr_types.h; sourceTree = "<group>"; };
 		274FAC87178FB1D600B17C7A /* libjpeg8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg8.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11507F825B52132000CF482 /* libSDL2-2.0.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.14.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.14.dylib"; sourceTree = "<group>"; };
+		A115082725B533E3000CF482 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2.dylib; path = ../../code/libs/macosx/libSDL2.dylib; sourceTree = "<group>"; };
 		A163B25D2193D5F800C48278 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,9 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11507F925B52132000CF482 /* libSDL2-2.0.14.dylib in Frameworks */,
 				274FAC88178FB1D600B17C7A /* libjpeg8.a in Frameworks */,
 				274FAC6B178FB17E00B17C7A /* OpenGL.framework in Frameworks */,
+				A115082825B533E3000CF482 /* libSDL2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +201,7 @@
 		274FAC68178FB15500B17C7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A115082725B533E3000CF482 /* libSDL2.dylib */,
 				A11507F825B52132000CF482 /* libSDL2-2.0.14.dylib */,
 				A163B25D2193D5F800C48278 /* libSDL2-2.0.0.dylib */,
 				274FAC6A178FB17E00B17C7A /* OpenGL.framework */,

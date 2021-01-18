@@ -82,8 +82,8 @@
 		27AAD06F178E04FF0093DFC0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AAD06E178E04FF0093DFC0 /* OpenAL.framework */; };
 		27AAD071178E05290093DFC0 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AAD070178E05290093DFC0 /* libcurl.dylib */; };
 		27AAD073178E052F0093DFC0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AAD072178E052F0093DFC0 /* libz.dylib */; };
-		A11507F525B5207F000CF482 /* libSDL2-2.0.14.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A11507F425B5207F000CF482 /* libSDL2-2.0.14.dylib */; };
-		A11507F625B5207F000CF482 /* libSDL2-2.0.14.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A11507F425B5207F000CF482 /* libSDL2-2.0.14.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		A115082425B533D0000CF482 /* libSDL2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A115082325B533D0000CF482 /* libSDL2.dylib */; };
+		A115082525B533D0000CF482 /* libSDL2.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A115082325B533D0000CF482 /* libSDL2.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A1203449257C937600CA384C /* renderer_opengl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1203448257C937600CA384C /* renderer_opengl2.dylib */; };
 		A1403E58256F15E700DFAD74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1403E57256F15E700DFAD74 /* Images.xcassets */; };
 		A163B25A2193AEA100C48278 /* libopus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1665973219341DF0086B74B /* libopus.dylib */; };
@@ -92,13 +92,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A11507F725B5207F000CF482 /* Embed Libraries */ = {
+		A115082625B533D0000CF482 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A11507F625B5207F000CF482 /* libSDL2-2.0.14.dylib in Embed Libraries */,
+				A115082525B533D0000CF482 /* libSDL2.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +259,7 @@
 		27B0E9F31743E0A800DB1F32 /* null_net.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_net.c; sourceTree = "<group>"; };
 		27B0E9F41743E0A800DB1F32 /* null_snddma.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = null_snddma.c; sourceTree = "<group>"; };
 		A11507F425B5207F000CF482 /* libSDL2-2.0.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.14.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.14.dylib"; sourceTree = "<group>"; };
+		A115082325B533D0000CF482 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2.dylib; path = ../../code/libs/macosx/libSDL2.dylib; sourceTree = "<group>"; };
 		A1203448257C937600CA384C /* renderer_opengl2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = renderer_opengl2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A120344D257C93AC00CA384C /* cgame.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = cgame.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1203452257C93C800CA384C /* game.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = game.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -364,8 +365,8 @@
 				A163B25C2193AF1E00C48278 /* renderer_opengl1.dylib in Frameworks */,
 				A163B25A2193AEA100C48278 /* libopus.dylib in Frameworks */,
 				A1203449257C937600CA384C /* renderer_opengl2.dylib in Frameworks */,
+				A115082425B533D0000CF482 /* libSDL2.dylib in Frameworks */,
 				273531F014D1275D00EB7BD6 /* Cocoa.framework in Frameworks */,
-				A11507F525B5207F000CF482 /* libSDL2-2.0.14.dylib in Frameworks */,
 				2758BB3317905B8F007F6582 /* IOKit.framework in Frameworks */,
 				27AAD06F178E04FF0093DFC0 /* OpenAL.framework in Frameworks */,
 				2735379E14D8F13E000D6E73 /* botlib.a in Frameworks */,
@@ -571,6 +572,7 @@
 		273531EE14D1275D00EB7BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A115082325B533D0000CF482 /* libSDL2.dylib */,
 				A11507F425B5207F000CF482 /* libSDL2-2.0.14.dylib */,
 				A1203457257C93E500CA384C /* q3_ui.dylib */,
 				A1203452257C93C800CA384C /* game.dylib */,
@@ -788,7 +790,7 @@
 				273531E814D1275D00EB7BD6 /* Frameworks */,
 				2758BB35179061C1007F6582 /* Run Script - Copy Renderer & Game Dynamic Libraries, Symlink Architecture */,
 				273531E914D1275D00EB7BD6 /* Resources */,
-				A11507F725B5207F000CF482 /* Embed Libraries */,
+				A115082625B533D0000CF482 /* Embed Libraries */,
 			);
 			buildRules = (
 			);

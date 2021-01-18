@@ -540,9 +540,9 @@ ifeq ($(PLATFORM),darwin)
     #  the file has been modified by each build.
     LIBSDLMAIN=$(B)/libSDL2main.a
     LIBSDLMAINSRC=$(LIBSDIR)/macosx/libSDL2main.a
-    CLIENT_LIBS += $(LIBSDIR)/macosx/libSDL2-2.0.0.dylib
-    RENDERER_LIBS += $(LIBSDIR)/macosx/libSDL2-2.0.0.dylib
-    CLIENT_EXTRA_FILES += $(LIBSDIR)/macosx/libSDL2-2.0.0.dylib
+    CLIENT_LIBS += $(LIBSDIR)/macosx/libSDL2.dylib
+    RENDERER_LIBS += $(LIBSDIR)/macosx/libSDL2.dylib
+    CLIENT_EXTRA_FILES += $(LIBSDIR)/macosx/libSDL2.dylib
   else
     BASE_CFLAGS += -I/Library/Frameworks/SDL2.framework/Headers
     CLIENT_LIBS += -framework SDL2
