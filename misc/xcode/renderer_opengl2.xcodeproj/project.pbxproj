@@ -50,7 +50,8 @@
 		2758B9C6178FBBAC007F6582 /* q_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 2758B9C0178FBBAC007F6582 /* q_shared.c */; };
 		2758B9CC178FBC8B007F6582 /* libjpeg8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2758B9CB178FBC8B007F6582 /* libjpeg8.a */; };
 		2758B9CE178FBCBC007F6582 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2758B9CD178FBCBC007F6582 /* OpenGL.framework */; };
-		A163B2622193D8FC00C48278 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B2612193D8FC00C48278 /* libSDL2-2.0.0.dylib */; };
+		A11507FB25B52155000CF482 /* libSDL2-2.0.14.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A11507FA25B52155000CF482 /* libSDL2-2.0.14.dylib */; };
+		A11507FC25B52155000CF482 /* libSDL2-2.0.14.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = A11507FA25B52155000CF482 /* libSDL2-2.0.14.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A163B2662193DF8300C48278 /* tr_image_dds.c in Sources */ = {isa = PBXBuildFile; fileRef = A163B2642193DF8200C48278 /* tr_image_dds.c */; };
 		A163B2672193DF8300C48278 /* tr_dsa.c in Sources */ = {isa = PBXBuildFile; fileRef = A163B2652193DF8300C48278 /* tr_dsa.c */; };
 		A1F1105D23F21AF10030D586 /* shadowfill_fp.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1104123F21AF00030D586 /* shadowfill_fp.c */; };
@@ -82,6 +83,20 @@
 		A1F1107723F21AF10030D586 /* fogpass_fp.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1105B23F21AF10030D586 /* fogpass_fp.c */; };
 		A1F1107823F21AF10030D586 /* texturecolor_vp.c in Sources */ = {isa = PBXBuildFile; fileRef = A1F1105C23F21AF10030D586 /* texturecolor_vp.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A11507FD25B52155000CF482 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A11507FC25B52155000CF482 /* libSDL2-2.0.14.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		274FAC1D178FAF0C00B17C7A /* renderer_opengl2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = renderer_opengl2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +186,7 @@
 		2758BA27178FCFC0007F6582 /* texturecolor_vp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = texturecolor_vp.glsl; sourceTree = "<group>"; };
 		2758BA29178FCFC0007F6582 /* tonemap_fp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tonemap_fp.glsl; sourceTree = "<group>"; };
 		2758BA2B178FCFC0007F6582 /* tonemap_vp.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tonemap_vp.glsl; sourceTree = "<group>"; };
+		A11507FA25B52155000CF482 /* libSDL2-2.0.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.14.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.14.dylib"; sourceTree = "<group>"; };
 		A163B2612193D8FC00C48278 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		A163B2632193DF8200C48278 /* tr_dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tr_dsa.h; sourceTree = "<group>"; };
 		A163B2642193DF8200C48278 /* tr_image_dds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tr_image_dds.c; sourceTree = "<group>"; };
@@ -210,9 +226,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A163B2622193D8FC00C48278 /* libSDL2-2.0.0.dylib in Frameworks */,
 				2758B9CC178FBC8B007F6582 /* libjpeg8.a in Frameworks */,
 				2758B9CE178FBCBC007F6582 /* OpenGL.framework in Frameworks */,
+				A11507FB25B52155000CF482 /* libSDL2-2.0.14.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +354,7 @@
 		2758B9C9178FBC6F007F6582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A11507FA25B52155000CF482 /* libSDL2-2.0.14.dylib */,
 				A163B2612193D8FC00C48278 /* libSDL2-2.0.0.dylib */,
 				2758B9CD178FBCBC007F6582 /* OpenGL.framework */,
 			);
@@ -427,6 +444,7 @@
 				2758B9F2178FCB65007F6582 /* Run Script - Generate C From GLSL Files */,
 				274FAC19178FAF0C00B17C7A /* Sources */,
 				274FAC1A178FAF0C00B17C7A /* Frameworks */,
+				A11507FD25B52155000CF482 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
