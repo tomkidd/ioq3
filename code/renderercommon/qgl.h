@@ -27,9 +27,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define __QGL_H__
 
 #ifdef USE_LOCAL_HEADERS
-#	include "SDL_opengl.h"
+#    include "SDL_opengl.h"
 #else
-#	include <SDL_opengl.h>
+#    include <SDL_opengl.h>
+#endif
+
+#ifdef USE_GLES
+#    include <SDL_opengles.h>
+#    include "qgles.h"
 #endif
 
 extern void (APIENTRYP qglActiveTextureARB) (GLenum texture);
@@ -38,7 +43,6 @@ extern void (APIENTRYP qglMultiTexCoord2fARB) (GLenum target, GLfloat s, GLfloat
 
 extern void (APIENTRYP qglLockArraysEXT) (GLint first, GLsizei count);
 extern void (APIENTRYP qglUnlockArraysEXT) (void);
-
 
 //===========================================================================
 
@@ -87,6 +91,7 @@ extern void (APIENTRYP qglUnlockArraysEXT) (void);
 #define QGL_1_1_FIXED_FUNCTION_PROCS \
 	GLE(void, AlphaFunc, GLenum func, GLclampf ref) \
 	GLE(void, Color4f, GLfloat red, GLfloat green, GLfloat blue, GLfloat alpha) \
+	GLE(void, Color4ub, GLubyte red, GLubyte green, GLubyte blue, GLubyte alpha) \
 	GLE(void, ColorPointer, GLint size, GLenum type, GLsizei stride, const GLvoid *ptr) \
 	GLE(void, DisableClientState, GLenum cap) \
 	GLE(void, EnableClientState, GLenum cap) \

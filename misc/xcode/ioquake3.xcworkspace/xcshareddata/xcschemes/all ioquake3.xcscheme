@@ -170,7 +170,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "273531EA14D1275D00EB7BD6"
                BuildableName = "ioquake3.app"
-               BlueprintName = "ioquake3"
+               BlueprintName = "ioquake3-macOS"
                ReferencedContainer = "container:ioquake3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

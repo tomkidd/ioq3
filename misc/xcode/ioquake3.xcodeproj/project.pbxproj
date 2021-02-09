@@ -90,6 +90,76 @@
 		A163B25A2193AEA100C48278 /* libopus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1665973219341DF0086B74B /* libopus.dylib */; };
 		A163B25C2193AF1E00C48278 /* renderer_opengl1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B25B2193AF1E00C48278 /* renderer_opengl1.dylib */; };
 		A1665971219107490086B74B /* sys_autoupdater.c in Sources */ = {isa = PBXBuildFile; fileRef = A1665970219107490086B74B /* sys_autoupdater.c */; };
+		A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280725BE5D6700D90626 /* Assets.xcassets */; };
+		A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */; };
+		A1F9282025BE669E00D90626 /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7D178FA97100B17C7A /* ftola.c */; };
+		A1F9282325BE66B400D90626 /* snapvector.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB81178FA97100B17C7A /* snapvector.c */; };
+		A1F9282625BE66CD00D90626 /* snd_adpcm.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC914D137BC005EB142 /* snd_adpcm.c */; };
+		A1F9282725BE66CD00D90626 /* snd_dma.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BECA14D137BC005EB142 /* snd_dma.c */; };
+		A1F9282825BE66CD00D90626 /* libmumblelink.c in Sources */ = {isa = PBXBuildFile; fileRef = 278714D717911C1300094CA3 /* libmumblelink.c */; };
+		A1F9282925BE66CD00D90626 /* cl_scrn.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC514D137BC005EB142 /* cl_scrn.c */; };
+		A1F9282A25BE66CD00D90626 /* snd_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BECC14D137BC005EB142 /* snd_mem.c */; };
+		A1F9282B25BE66CD00D90626 /* snd_codec_wav.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD006178E00650093DFC0 /* snd_codec_wav.c */; };
+		A1F9282C25BE66CD00D90626 /* snd_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB78178FA81700B17C7A /* snd_main.c */; };
+		A1F9282D25BE66CD00D90626 /* qal.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD001178E00550093DFC0 /* qal.c */; };
+		A1F9282E25BE66CD00D90626 /* cl_curl.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFFD178E002B0093DFC0 /* cl_curl.c */; };
+		A1F9282F25BE66CD00D90626 /* snd_wavelet.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BECF14D137BC005EB142 /* snd_wavelet.c */; };
+		A1F9283025BE66CD00D90626 /* snd_mix.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BECD14D137BC005EB142 /* snd_mix.c */; };
+		A1F9283125BE66CD00D90626 /* snd_codec.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD00A178E006E0093DFC0 /* snd_codec.c */; };
+		A1F9283225BE66CD00D90626 /* cl_avi.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFFB178E001D0093DFC0 /* cl_avi.c */; };
+		A1F9283325BE66CD00D90626 /* snd_codec_opus.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD005178E00650093DFC0 /* snd_codec_opus.c */; };
+		A1F9283425BE66CD00D90626 /* cl_cin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEBE14D137BC005EB142 /* cl_cin.c */; };
+		A1F9283525BE66CD00D90626 /* cl_keys.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC114D137BC005EB142 /* cl_keys.c */; };
+		A1F9283625BE66CD00D90626 /* cl_ui.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC614D137BC005EB142 /* cl_ui.c */; };
+		A1F9283725BE66CD00D90626 /* snd_openal.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD00D178E007B0093DFC0 /* snd_openal.c */; };
+		A1F9283825BE66CD00D90626 /* cl_cgame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEBD14D137BC005EB142 /* cl_cgame.c */; };
+		A1F9283925BE66CD00D90626 /* snd_codec_ogg.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD004178E00650093DFC0 /* snd_codec_ogg.c */; };
+		A1F9283A25BE66CD00D90626 /* cl_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC214D137BC005EB142 /* cl_main.c */; };
+		A1F9283B25BE66CD00D90626 /* cl_console.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEBF14D137BC005EB142 /* cl_console.c */; };
+		A1F9283C25BE66CD00D90626 /* cl_net_chan.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC314D137BC005EB142 /* cl_net_chan.c */; };
+		A1F9283D25BE66CD00D90626 /* cl_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC414D137BC005EB142 /* cl_parse.c */; };
+		A1F9283E25BE66CD00D90626 /* cl_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BEC014D137BC005EB142 /* cl_input.c */; };
+		A1F9284325BE66F700D90626 /* cm_polylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8914D136DF005EB142 /* cm_polylib.c */; };
+		A1F9284425BE66F700D90626 /* cm_patch.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8714D136DF005EB142 /* cm_patch.c */; };
+		A1F9284525BE66F700D90626 /* msg.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9414D136DF005EB142 /* msg.c */; };
+		A1F9284625BE66F700D90626 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9814D136DF005EB142 /* unzip.c */; };
+		A1F9284725BE66F700D90626 /* cm_test.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8C14D136DF005EB142 /* cm_test.c */; };
+		A1F9284825BE66F700D90626 /* q_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD019178E00E80093DFC0 /* q_shared.c */; };
+		A1F9284925BE66F700D90626 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7A178FA86E00B17C7A /* md5.c */; };
+		A1F9284A25BE66F700D90626 /* puff.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD014178E00CE0093DFC0 /* puff.c */; };
+		A1F9284B25BE66F700D90626 /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9014D136DF005EB142 /* cvar.c */; };
+		A1F9284C25BE66F700D90626 /* cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8E14D136DF005EB142 /* cmd.c */; };
+		A1F9284D25BE66F700D90626 /* cm_load.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8514D136DF005EB142 /* cm_load.c */; };
+		A1F9284E25BE66F700D90626 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8F14D136DF005EB142 /* common.c */; };
+		A1F9284F25BE66F700D90626 /* files.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9114D136DF005EB142 /* files.c */; };
+		A1F9285025BE66F700D90626 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9214D136DF005EB142 /* huffman.c */; };
+		A1F9285125BE66F700D90626 /* cm_trace.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE8D14D136DF005EB142 /* cm_trace.c */; };
+		A1F9285225BE66F700D90626 /* net_chan.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9514D136DF005EB142 /* net_chan.c */; };
+		A1F9285325BE66F700D90626 /* q_math.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD017178E00E80093DFC0 /* q_math.c */; };
+		A1F9285425BE66F700D90626 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD00F178E00AB0093DFC0 /* ioapi.c */; };
+		A1F9285525BE66F700D90626 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9314D136DF005EB142 /* md4.c */; };
+		A1F9285625BE66F700D90626 /* net_ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD012178E00C30093DFC0 /* net_ip.c */; };
+		A1F9285925BE66FC00D90626 /* vm_interpreted.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9A14D136DF005EB142 /* vm_interpreted.c */; };
+		A1F9285C25BE670E00D90626 /* vm_x86.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9E14D136DF005EB142 /* vm_x86.c */; };
+		A1F9285D25BE670E00D90626 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9F14D136DF005EB142 /* vm.c */; };
+		A1F9286225BE672800D90626 /* tr_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD064178E03620093DFC0 /* tr_noise.c */; };
+		A1F9286525BE673E00D90626 /* sdl_snd.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD029178E013E0093DFC0 /* sdl_snd.c */; };
+		A1F9286625BE673E00D90626 /* sdl_input.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD028178E013E0093DFC0 /* sdl_input.c */; };
+		A1F9286925BE67BB00D90626 /* sv_net_chan.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7614D13696005EB142 /* sv_net_chan.c */; };
+		A1F9286A25BE67BB00D90626 /* sv_ccmds.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7114D13696005EB142 /* sv_ccmds.c */; };
+		A1F9286B25BE67BB00D90626 /* sv_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7214D13696005EB142 /* sv_client.c */; };
+		A1F9286C25BE67BB00D90626 /* sv_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7414D13696005EB142 /* sv_init.c */; };
+		A1F9286D25BE67BB00D90626 /* sv_world.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7914D13696005EB142 /* sv_world.c */; };
+		A1F9286E25BE67BB00D90626 /* sv_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7514D13696005EB142 /* sv_main.c */; };
+		A1F9286F25BE67BB00D90626 /* sv_snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7814D13696005EB142 /* sv_snapshot.c */; };
+		A1F9287025BE67BB00D90626 /* sv_bot.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7014D13696005EB142 /* sv_bot.c */; };
+		A1F9287125BE67BB00D90626 /* sv_game.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE7314D13696005EB142 /* sv_game.c */; };
+		A1F9287425BE689700D90626 /* con_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFDE178DF8760093DFC0 /* con_log.c */; };
+		A1F9287525BE689700D90626 /* sys_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE6178DF8760093DFC0 /* sys_unix.c */; };
+		A1F9287625BE689700D90626 /* sys_autoupdater.c in Sources */ = {isa = PBXBuildFile; fileRef = A1665970219107490086B74B /* sys_autoupdater.c */; };
+		A1F9287725BE689700D90626 /* con_tty.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE0178DF8760093DFC0 /* con_tty.c */; };
+		A1F9287825BE689700D90626 /* sys_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE5178DF8760093DFC0 /* sys_osx.m */; };
+		A1F9287925BE689700D90626 /* sys_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE4178DF8760093DFC0 /* sys_main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -350,6 +420,10 @@
 		A1665967219105430086B74B /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		A1665970219107490086B74B /* sys_autoupdater.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_autoupdater.c; sourceTree = "<group>"; };
 		A1665973219341DF0086B74B /* libopus.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libopus.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F927FC25BE5D6400D90626 /* ioquake3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioquake3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F9280725BE5D6700D90626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1F9280A25BE5D6700D90626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1F9280C25BE5D6700D90626 /* ioquake3-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ioquake3-ios-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +442,13 @@
 				2735379E14D8F13E000D6E73 /* botlib.a in Frameworks */,
 				27AAD071178E05290093DFC0 /* libcurl.dylib in Frameworks */,
 				27AAD073178E052F0093DFC0 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F927F925BE5D6400D90626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +642,7 @@
 			isa = PBXGroup;
 			children = (
 				273531EB14D1275D00EB7BD6 /* ioquake3.app */,
+				A1F927FC25BE5D6400D90626 /* ioquake3-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -584,6 +666,9 @@
 		273531F614D1275D00EB7BD6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1F9280725BE5D6700D90626 /* Assets.xcassets */,
+				A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */,
+				A1F9280C25BE5D6700D90626 /* ioquake3-ios-Info.plist */,
 				A1403E57256F15E700DFAD74 /* Images.xcassets */,
 				273531F714D1275D00EB7BD6 /* ioquake3-Info.plist */,
 				273531FD14D1275D00EB7BD6 /* ioquake3-Prefix.pch */,
@@ -773,9 +858,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		273531EA14D1275D00EB7BD6 /* ioquake3 */ = {
+		273531EA14D1275D00EB7BD6 /* ioquake3-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2735320914D1275D00EB7BD6 /* Build configuration list for PBXNativeTarget "ioquake3" */;
+			buildConfigurationList = 2735320914D1275D00EB7BD6 /* Build configuration list for PBXNativeTarget "ioquake3-macOS" */;
 			buildPhases = (
 				273531E714D1275D00EB7BD6 /* Sources */,
 				273531E814D1275D00EB7BD6 /* Frameworks */,
@@ -787,9 +872,26 @@
 			);
 			dependencies = (
 			);
-			name = ioquake3;
+			name = "ioquake3-macOS";
 			productName = quake3;
 			productReference = 273531EB14D1275D00EB7BD6 /* ioquake3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1F927FB25BE5D6400D90626 /* ioquake3-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F9280D25BE5D6700D90626 /* Build configuration list for PBXNativeTarget "ioquake3-iOS" */;
+			buildPhases = (
+				A1F927F825BE5D6400D90626 /* Sources */,
+				A1F927F925BE5D6400D90626 /* Frameworks */,
+				A1F927FA25BE5D6400D90626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ioquake3-iOS";
+			productName = "ioquake3-iOS";
+			productReference = A1F927FC25BE5D6400D90626 /* ioquake3-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -799,8 +901,16 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = io;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = ioquake;
+				TargetAttributes = {
+					A1F927FB25BE5D6400D90626 = {
+						CreatedOnToolsVersion = 12.3;
+						DevelopmentTeam = 9UY8SFDNQ8;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 273531E514D1275D00EB7BD6 /* Build configuration list for PBXProject "ioquake3" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -815,7 +925,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				273531EA14D1275D00EB7BD6 /* ioquake3 */,
+				273531EA14D1275D00EB7BD6 /* ioquake3-macOS */,
+				A1F927FB25BE5D6400D90626 /* ioquake3-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -826,6 +937,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1403E58256F15E700DFAD74 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F927FA25BE5D6400D90626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */,
+				A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,7 +1046,93 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1F927F825BE5D6400D90626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F9283725BE66CD00D90626 /* snd_openal.c in Sources */,
+				A1F9284625BE66F700D90626 /* unzip.c in Sources */,
+				A1F9285D25BE670E00D90626 /* vm.c in Sources */,
+				A1F9286225BE672800D90626 /* tr_noise.c in Sources */,
+				A1F9283525BE66CD00D90626 /* cl_keys.c in Sources */,
+				A1F9285325BE66F700D90626 /* q_math.c in Sources */,
+				A1F9286625BE673E00D90626 /* sdl_input.c in Sources */,
+				A1F9283125BE66CD00D90626 /* snd_codec.c in Sources */,
+				A1F9283A25BE66CD00D90626 /* cl_main.c in Sources */,
+				A1F9287425BE689700D90626 /* con_log.c in Sources */,
+				A1F9283E25BE66CD00D90626 /* cl_input.c in Sources */,
+				A1F9285525BE66F700D90626 /* md4.c in Sources */,
+				A1F9287725BE689700D90626 /* con_tty.c in Sources */,
+				A1F9282C25BE66CD00D90626 /* snd_main.c in Sources */,
+				A1F9286925BE67BB00D90626 /* sv_net_chan.c in Sources */,
+				A1F9287025BE67BB00D90626 /* sv_bot.c in Sources */,
+				A1F9284B25BE66F700D90626 /* cvar.c in Sources */,
+				A1F9284825BE66F700D90626 /* q_shared.c in Sources */,
+				A1F9282925BE66CD00D90626 /* cl_scrn.c in Sources */,
+				A1F9283B25BE66CD00D90626 /* cl_console.c in Sources */,
+				A1F9284725BE66F700D90626 /* cm_test.c in Sources */,
+				A1F9286F25BE67BB00D90626 /* sv_snapshot.c in Sources */,
+				A1F9287625BE689700D90626 /* sys_autoupdater.c in Sources */,
+				A1F9283225BE66CD00D90626 /* cl_avi.c in Sources */,
+				A1F9283925BE66CD00D90626 /* snd_codec_ogg.c in Sources */,
+				A1F9285C25BE670E00D90626 /* vm_x86.c in Sources */,
+				A1F9284425BE66F700D90626 /* cm_patch.c in Sources */,
+				A1F9284925BE66F700D90626 /* md5.c in Sources */,
+				A1F9286525BE673E00D90626 /* sdl_snd.c in Sources */,
+				A1F9282A25BE66CD00D90626 /* snd_mem.c in Sources */,
+				A1F9287825BE689700D90626 /* sys_osx.m in Sources */,
+				A1F9286C25BE67BB00D90626 /* sv_init.c in Sources */,
+				A1F9287525BE689700D90626 /* sys_unix.c in Sources */,
+				A1F9282725BE66CD00D90626 /* snd_dma.c in Sources */,
+				A1F9282325BE66B400D90626 /* snapvector.c in Sources */,
+				A1F9286B25BE67BB00D90626 /* sv_client.c in Sources */,
+				A1F9286A25BE67BB00D90626 /* sv_ccmds.c in Sources */,
+				A1F9285125BE66F700D90626 /* cm_trace.c in Sources */,
+				A1F9282025BE669E00D90626 /* ftola.c in Sources */,
+				A1F9282D25BE66CD00D90626 /* qal.c in Sources */,
+				A1F9283325BE66CD00D90626 /* snd_codec_opus.c in Sources */,
+				A1F9285425BE66F700D90626 /* ioapi.c in Sources */,
+				A1F9282625BE66CD00D90626 /* snd_adpcm.c in Sources */,
+				A1F9283D25BE66CD00D90626 /* cl_parse.c in Sources */,
+				A1F9286D25BE67BB00D90626 /* sv_world.c in Sources */,
+				A1F9283825BE66CD00D90626 /* cl_cgame.c in Sources */,
+				A1F9285225BE66F700D90626 /* net_chan.c in Sources */,
+				A1F9284325BE66F700D90626 /* cm_polylib.c in Sources */,
+				A1F9284A25BE66F700D90626 /* puff.c in Sources */,
+				A1F9285625BE66F700D90626 /* net_ip.c in Sources */,
+				A1F9286E25BE67BB00D90626 /* sv_main.c in Sources */,
+				A1F9284525BE66F700D90626 /* msg.c in Sources */,
+				A1F9284C25BE66F700D90626 /* cmd.c in Sources */,
+				A1F9284D25BE66F700D90626 /* cm_load.c in Sources */,
+				A1F9282825BE66CD00D90626 /* libmumblelink.c in Sources */,
+				A1F9283425BE66CD00D90626 /* cl_cin.c in Sources */,
+				A1F9285025BE66F700D90626 /* huffman.c in Sources */,
+				A1F9283625BE66CD00D90626 /* cl_ui.c in Sources */,
+				A1F9287925BE689700D90626 /* sys_main.c in Sources */,
+				A1F9284E25BE66F700D90626 /* common.c in Sources */,
+				A1F9287125BE67BB00D90626 /* sv_game.c in Sources */,
+				A1F9285925BE66FC00D90626 /* vm_interpreted.c in Sources */,
+				A1F9282B25BE66CD00D90626 /* snd_codec_wav.c in Sources */,
+				A1F9284F25BE66F700D90626 /* files.c in Sources */,
+				A1F9283025BE66CD00D90626 /* snd_mix.c in Sources */,
+				A1F9283C25BE66CD00D90626 /* cl_net_chan.c in Sources */,
+				A1F9282F25BE66CD00D90626 /* snd_wavelet.c in Sources */,
+				A1F9282E25BE66CD00D90626 /* cl_curl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F9280A25BE5D6700D90626 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2735320714D1275D00EB7BD6 /* Debug */ = {
@@ -961,7 +1167,6 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					MACOS_X,
 					BOTLIB,
 					MISSIONPACK,
 					"USE_OPENAL=1",
@@ -991,6 +1196,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../code/jpeg-8c\"",
+					"\"$(SRCROOT)/../../code/opus-1.2.1/include\"",
+					"\"$(SRCROOT)/../../code/opusfile-0.9/include\"",
+					"\"$(SRCROOT)/../../code/libogg-1.3.3/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -1027,7 +1238,6 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					MACOS_X,
 					BOTLIB,
 					MISSIONPACK,
 					"USE_CURL=1",
@@ -1045,6 +1255,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../code/jpeg-8c\"",
+					"\"$(SRCROOT)/../../code/opus-1.2.1/include\"",
+					"\"$(SRCROOT)/../../code/opusfile-0.9/include\"",
+					"\"$(SRCROOT)/../../code/libogg-1.3.3/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
@@ -1059,11 +1275,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ioquake3-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../code/jpeg-8c\"",
-					"\"$(SRCROOT)/../../code/opus-1.2.1/include\"",
-					"\"$(SRCROOT)/../../code/opusfile-0.9/include\"",
-					"\"$(SRCROOT)/../../code/libogg-1.3.3/include\"",
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					MACOS_X,
 				);
 				INFOPLIST_FILE = "ioquake3-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -1087,11 +1301,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ioquake3-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../code/jpeg-8c\"",
-					"\"$(SRCROOT)/../../code/opus-1.2.1/include\"",
-					"\"$(SRCROOT)/../../code/opusfile-0.9/include\"",
-					"\"$(SRCROOT)/../../code/libogg-1.3.3/include\"",
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					MACOS_X,
 				);
 				INFOPLIST_FILE = "ioquake3-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -1103,6 +1315,90 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ioquake3;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A1F9280E25BE5D6700D90626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					IOS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ioquake3-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.ioquake3-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1F9280F25BE5D6700D90626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					IOS,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "ioquake3-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.ioquake3-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1118,11 +1414,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2735320914D1275D00EB7BD6 /* Build configuration list for PBXNativeTarget "ioquake3" */ = {
+		2735320914D1275D00EB7BD6 /* Build configuration list for PBXNativeTarget "ioquake3-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2735320A14D1275D00EB7BD6 /* Debug */,
 				2735320B14D1275D00EB7BD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F9280D25BE5D6700D90626 /* Build configuration list for PBXNativeTarget "ioquake3-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F9280E25BE5D6700D90626 /* Debug */,
+				A1F9280F25BE5D6700D90626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

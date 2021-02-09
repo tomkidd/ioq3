@@ -156,12 +156,33 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define idx64 1
 #define ARCH_STRING "x86_64"
 #define Q3_LITTLE_ENDIAN
-#elif defined __aarch64__
-#define ARCH_STRING "arm64"
-#define Q3_LITTLE_ENDIAN
-#ifndef NO_VM_COMPILED
-#define NO_VM_COMPILED
 #endif
+
+#define DLL_EXT ".dylib"
+
+#endif
+
+//=================================================================== iOS ===
+
+#if defined(IOS)
+
+// make sure this is defined, just for sanity's sake...
+#ifndef MACOS_X
+#define MACOS_X
+#endif
+
+// removes compiler warnings
+#ifdef OS_STRING
+#undef OS_STRING
+#endif
+
+#define OS_STRING "ios"
+#define ID_INLINE inline
+#define PATH_SEP '/'
+
+#if defined __arm64__
+#define ARCH_STRING "__arm64__"
+#define Q3_LITTLE_ENDIAN
 #endif
 
 #define DLL_EXT ".dylib"
