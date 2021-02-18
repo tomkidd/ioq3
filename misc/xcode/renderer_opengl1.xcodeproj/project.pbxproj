@@ -45,7 +45,57 @@
 		274FAC84178FB1C800B17C7A /* tr_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC78178FB1C800B17C7A /* tr_noise.c */; };
 		274FAC88178FB1D600B17C7A /* libjpeg8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274FAC87178FB1D600B17C7A /* libjpeg8.a */; };
 		A115085B25B9CD34000CF482 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B25D2193D5F800C48278 /* libSDL2-2.0.0.dylib */; };
+		A1F4036D25D23A44009B1C92 /* renderer_opengles1.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F4036C25D23A44009B1C92 /* renderer_opengles1.m */; };
+		A1F4036E25D23A44009B1C92 /* renderer_opengles1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1F4036B25D23A44009B1C92 /* renderer_opengles1.h */; };
+		A1F4037425D23A58009B1C92 /* q_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC5F178FB14500B17C7A /* q_shared.c */; };
+		A1F4037525D23A58009B1C92 /* q_math.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC5E178FB14500B17C7A /* q_math.c */; };
+		A1F4037625D23A58009B1C92 /* puff.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC5C178FB14500B17C7A /* puff.c */; };
+		A1F4037925D23A63009B1C92 /* tr_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC78178FB1C800B17C7A /* tr_noise.c */; };
+		A1F4037A25D23A63009B1C92 /* tr_image_png.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC76178FB1C800B17C7A /* tr_image_png.c */; };
+		A1F4037B25D23A63009B1C92 /* tr_font.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC72178FB1C800B17C7A /* tr_font.c */; };
+		A1F4037C25D23A63009B1C92 /* tr_image_bmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC73178FB1C800B17C7A /* tr_image_bmp.c */; };
+		A1F4037D25D23A63009B1C92 /* tr_image_tga.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC77178FB1C800B17C7A /* tr_image_tga.c */; };
+		A1F4037E25D23A63009B1C92 /* tr_image_jpg.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC74178FB1C800B17C7A /* tr_image_jpg.c */; };
+		A1F4037F25D23A63009B1C92 /* tr_image_pcx.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC75178FB1C800B17C7A /* tr_image_pcx.c */; };
+		A1F4038225D23A6F009B1C92 /* tr_model.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC34178FAF6900B17C7A /* tr_model.c */; };
+		A1F4038325D23A6F009B1C92 /* tr_subs.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC3B178FAF6900B17C7A /* tr_subs.c */; };
+		A1F4038425D23A6F009B1C92 /* tr_model_iqm.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC33178FAF6900B17C7A /* tr_model_iqm.c */; };
+		A1F4038525D23A6F009B1C92 /* tr_marks.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC31178FAF6900B17C7A /* tr_marks.c */; };
+		A1F4038625D23A6F009B1C92 /* tr_backend.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC27178FAF6900B17C7A /* tr_backend.c */; };
+		A1F4038725D23A6F009B1C92 /* tr_curve.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC2A178FAF6900B17C7A /* tr_curve.c */; };
+		A1F4038825D23A6F009B1C92 /* tr_light.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC2E178FAF6900B17C7A /* tr_light.c */; };
+		A1F4038925D23A6F009B1C92 /* tr_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC30178FAF6900B17C7A /* tr_main.c */; };
+		A1F4038A25D23A6F009B1C92 /* tr_scene.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC35178FAF6900B17C7A /* tr_scene.c */; };
+		A1F4038B25D23A6F009B1C92 /* tr_bsp.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC28178FAF6900B17C7A /* tr_bsp.c */; };
+		A1F4038C25D23A6F009B1C92 /* tr_image.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC2C178FAF6900B17C7A /* tr_image.c */; };
+		A1F4038D25D23A6F009B1C92 /* tr_shade_calc.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC36178FAF6900B17C7A /* tr_shade_calc.c */; };
+		A1F4038E25D23A6F009B1C92 /* tr_shadows.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC39178FAF6900B17C7A /* tr_shadows.c */; };
+		A1F4038F25D23A6F009B1C92 /* tr_shader.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC38178FAF6900B17C7A /* tr_shader.c */; };
+		A1F4039025D23A6F009B1C92 /* tr_animation.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC26178FAF6900B17C7A /* tr_animation.c */; };
+		A1F4039125D23A6F009B1C92 /* tr_world.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC3D178FAF6900B17C7A /* tr_world.c */; };
+		A1F4039225D23A6F009B1C92 /* tr_surface.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC3C178FAF6900B17C7A /* tr_surface.c */; };
+		A1F4039325D23A6F009B1C92 /* tr_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC2D178FAF6900B17C7A /* tr_init.c */; };
+		A1F4039425D23A6F009B1C92 /* tr_shade.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC37178FAF6900B17C7A /* tr_shade.c */; };
+		A1F4039525D23A6F009B1C92 /* tr_mesh.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC32178FAF6900B17C7A /* tr_mesh.c */; };
+		A1F4039625D23A6F009B1C92 /* tr_flares.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC2B178FAF6900B17C7A /* tr_flares.c */; };
+		A1F4039725D23A6F009B1C92 /* tr_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC29178FAF6900B17C7A /* tr_cmds.c */; };
+		A1F4039825D23A6F009B1C92 /* tr_sky.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC3A178FAF6900B17C7A /* tr_sky.c */; };
+		A1F4039B25D23A7F009B1C92 /* sdl_gamma.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC57178FAF8E00B17C7A /* sdl_gamma.c */; };
+		A1F4039C25D23A7F009B1C92 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAC58178FAF8E00B17C7A /* sdl_glimp.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1F4036725D23A44009B1C92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A1F4036E25D23A44009B1C92 /* renderer_opengles1.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		274FAC0D178FAEFC00B17C7A /* renderer_opengl1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = renderer_opengl1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +149,9 @@
 		A11507F825B52132000CF482 /* libSDL2-2.0.14.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.14.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.14.dylib"; sourceTree = "<group>"; };
 		A115082725B533E3000CF482 /* libSDL2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libSDL2.dylib; path = ../../code/libs/macosx/libSDL2.dylib; sourceTree = "<group>"; };
 		A163B25D2193D5F800C48278 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		A1F4036925D23A44009B1C92 /* librenderer_opengles1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librenderer_opengles1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F4036B25D23A44009B1C92 /* renderer_opengles1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = renderer_opengles1.h; sourceTree = "<group>"; };
+		A1F4036C25D23A44009B1C92 /* renderer_opengles1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = renderer_opengles1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +165,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1F4036625D23A44009B1C92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				274FAC24178FAF3900B17C7A /* code */,
+				A1F4036A25D23A44009B1C92 /* renderer_opengles1 */,
 				274FAC68178FB15500B17C7A /* Frameworks */,
 				274FAC69178FB15C00B17C7A /* Libraries */,
 				274FAC0E178FAEFC00B17C7A /* Products */,
@@ -129,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				274FAC0D178FAEFC00B17C7A /* renderer_opengl1.dylib */,
+				A1F4036925D23A44009B1C92 /* librenderer_opengles1.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -237,6 +299,15 @@
 			path = renderercommon;
 			sourceTree = "<group>";
 		};
+		A1F4036A25D23A44009B1C92 /* renderer_opengles1 */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4036B25D23A44009B1C92 /* renderer_opengles1.h */,
+				A1F4036C25D23A44009B1C92 /* renderer_opengles1.m */,
+			);
+			path = renderer_opengles1;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +327,23 @@
 			productReference = 274FAC0D178FAEFC00B17C7A /* renderer_opengl1.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		A1F4036825D23A44009B1C92 /* renderer_opengles1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F4037125D23A44009B1C92 /* Build configuration list for PBXNativeTarget "renderer_opengles1" */;
+			buildPhases = (
+				A1F4036525D23A44009B1C92 /* Sources */,
+				A1F4036625D23A44009B1C92 /* Frameworks */,
+				A1F4036725D23A44009B1C92 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = renderer_opengles1;
+			productName = renderer_opengles1;
+			productReference = A1F4036925D23A44009B1C92 /* librenderer_opengles1.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,6 +353,13 @@
 				CLASSPREFIX = io;
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = ioquake;
+				TargetAttributes = {
+					A1F4036825D23A44009B1C92 = {
+						CreatedOnToolsVersion = 12.4;
+						DevelopmentTeam = 9UY8SFDNQ8;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 274FAC08178FAEFC00B17C7A /* Build configuration list for PBXProject "renderer_opengl1" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -280,6 +375,7 @@
 			projectRoot = "";
 			targets = (
 				274FAC0C178FAEFC00B17C7A /* renderer_opengl1 */,
+				A1F4036825D23A44009B1C92 /* renderer_opengles1 */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +420,49 @@
 				274FAC82178FB1C800B17C7A /* tr_image_png.c in Sources */,
 				274FAC83178FB1C800B17C7A /* tr_image_tga.c in Sources */,
 				274FAC84178FB1C800B17C7A /* tr_noise.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F4036525D23A44009B1C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F4039B25D23A7F009B1C92 /* sdl_gamma.c in Sources */,
+				A1F4038325D23A6F009B1C92 /* tr_subs.c in Sources */,
+				A1F4037B25D23A63009B1C92 /* tr_font.c in Sources */,
+				A1F4038A25D23A6F009B1C92 /* tr_scene.c in Sources */,
+				A1F4037625D23A58009B1C92 /* puff.c in Sources */,
+				A1F4039525D23A6F009B1C92 /* tr_mesh.c in Sources */,
+				A1F4038925D23A6F009B1C92 /* tr_main.c in Sources */,
+				A1F4037425D23A58009B1C92 /* q_shared.c in Sources */,
+				A1F4038F25D23A6F009B1C92 /* tr_shader.c in Sources */,
+				A1F4039725D23A6F009B1C92 /* tr_cmds.c in Sources */,
+				A1F4039425D23A6F009B1C92 /* tr_shade.c in Sources */,
+				A1F4037925D23A63009B1C92 /* tr_noise.c in Sources */,
+				A1F4039025D23A6F009B1C92 /* tr_animation.c in Sources */,
+				A1F4038C25D23A6F009B1C92 /* tr_image.c in Sources */,
+				A1F4037A25D23A63009B1C92 /* tr_image_png.c in Sources */,
+				A1F4039225D23A6F009B1C92 /* tr_surface.c in Sources */,
+				A1F4038225D23A6F009B1C92 /* tr_model.c in Sources */,
+				A1F4037F25D23A63009B1C92 /* tr_image_pcx.c in Sources */,
+				A1F4037C25D23A63009B1C92 /* tr_image_bmp.c in Sources */,
+				A1F4036D25D23A44009B1C92 /* renderer_opengles1.m in Sources */,
+				A1F4038625D23A6F009B1C92 /* tr_backend.c in Sources */,
+				A1F4037D25D23A63009B1C92 /* tr_image_tga.c in Sources */,
+				A1F4039325D23A6F009B1C92 /* tr_init.c in Sources */,
+				A1F4038825D23A6F009B1C92 /* tr_light.c in Sources */,
+				A1F4039825D23A6F009B1C92 /* tr_sky.c in Sources */,
+				A1F4039125D23A6F009B1C92 /* tr_world.c in Sources */,
+				A1F4037525D23A58009B1C92 /* q_math.c in Sources */,
+				A1F4039C25D23A7F009B1C92 /* sdl_glimp.c in Sources */,
+				A1F4038525D23A6F009B1C92 /* tr_marks.c in Sources */,
+				A1F4037E25D23A63009B1C92 /* tr_image_jpg.c in Sources */,
+				A1F4038E25D23A6F009B1C92 /* tr_shadows.c in Sources */,
+				A1F4038425D23A6F009B1C92 /* tr_model_iqm.c in Sources */,
+				A1F4038D25D23A6F009B1C92 /* tr_shade_calc.c in Sources */,
+				A1F4038725D23A6F009B1C92 /* tr_curve.c in Sources */,
+				A1F4039625D23A6F009B1C92 /* tr_flares.c in Sources */,
+				A1F4038B25D23A6F009B1C92 /* tr_bsp.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +515,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../code/jpeg-8c\"",
+					"\"$(SRCROOT)/../../code/SDL2/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -423,7 +565,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../code/jpeg-8c\"",
+					"\"$(SRCROOT)/../../code/SDL2/include\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGL;
@@ -440,10 +585,6 @@
 					"$(inherited)",
 					"GL_SILENCE_DEPRECATION=1",
 				);
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../code/jpeg-8c\"",
-					"\"$(SRCROOT)/../../code/SDL2/include\"",
-				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../code/libs/macosx\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGL;
@@ -458,13 +599,87 @@
 					"USE_LOCAL_HEADERS=1",
 					"GL_SILENCE_DEPRECATION=1",
 				);
-				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../code/jpeg-8c\"",
-					"\"$(SRCROOT)/../../code/SDL2/include\"",
-				);
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../code/libs/macosx\"";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = OpenGL;
+			};
+			name = Release;
+		};
+		A1F4036F25D23A44009B1C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"USE_LOCAL_HEADERS=1",
+					"DEBUG=1",
+					"$(inherited)",
+					"GL_SILENCE_DEPRECATION=1",
+					USE_GLES,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1F4037025D23A44009B1C92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 9UY8SFDNQ8;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"USE_LOCAL_HEADERS=1",
+					"GL_SILENCE_DEPRECATION=1",
+					USE_GLES,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -485,6 +700,15 @@
 			buildConfigurations = (
 				274FAC12178FAEFC00B17C7A /* Debug */,
 				274FAC13178FAEFC00B17C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F4037125D23A44009B1C92 /* Build configuration list for PBXNativeTarget "renderer_opengles1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F4036F25D23A44009B1C92 /* Debug */,
+				A1F4037025D23A44009B1C92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

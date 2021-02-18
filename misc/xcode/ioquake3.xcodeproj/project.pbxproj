@@ -90,6 +90,19 @@
 		A163B25A2193AEA100C48278 /* libopus.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1665973219341DF0086B74B /* libopus.dylib */; };
 		A163B25C2193AF1E00C48278 /* renderer_opengl1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A163B25B2193AF1E00C48278 /* renderer_opengl1.dylib */; };
 		A1665971219107490086B74B /* sys_autoupdater.c in Sources */ = {isa = PBXBuildFile; fileRef = A1665970219107490086B74B /* sys_autoupdater.c */; };
+		A1AF268725DE1517006F8E22 /* libsdl2_0_14_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF268425DE1501006F8E22 /* libsdl2_0_14_ios.a */; };
+		A1AF268F25DE16A4006F8E22 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF268E25DE16A4006F8E22 /* UIKit.framework */; };
+		A1AF269725DE1754006F8E22 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF269625DE1754006F8E22 /* AVFoundation.framework */; };
+		A1AF269B25DE1768006F8E22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF269A25DE1768006F8E22 /* QuartzCore.framework */; };
+		A1AF269F25DE1776006F8E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF269E25DE1776006F8E22 /* Foundation.framework */; };
+		A1AF26A325DE1781006F8E22 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26A225DE1781006F8E22 /* GameController.framework */; };
+		A1AF26A725DE1793006F8E22 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26A625DE1793006F8E22 /* CoreGraphics.framework */; };
+		A1AF26AB25DE179A006F8E22 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26AA25DE179A006F8E22 /* Metal.framework */; };
+		A1AF26AF25DE17A0006F8E22 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26AE25DE17A0006F8E22 /* CoreHaptics.framework */; };
+		A1AF26B325DE17AA006F8E22 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26B225DE17AA006F8E22 /* AudioToolbox.framework */; };
+		A1AF26BF25DE185F006F8E22 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26BE25DE185F006F8E22 /* CoreMotion.framework */; };
+		A1AF26C325DE18C5006F8E22 /* sys_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF26C225DE18C5006F8E22 /* sys_ios.m */; };
+		A1AF26CA25DE1AAE006F8E22 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26C925DE1AAA006F8E22 /* libz.tbd */; };
 		A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280725BE5D6700D90626 /* Assets.xcassets */; };
 		A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */; };
 		A1F9282025BE669E00D90626 /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7D178FA97100B17C7A /* ftola.c */; };
@@ -158,7 +171,6 @@
 		A1F9287525BE689700D90626 /* sys_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE6178DF8760093DFC0 /* sys_unix.c */; };
 		A1F9287625BE689700D90626 /* sys_autoupdater.c in Sources */ = {isa = PBXBuildFile; fileRef = A1665970219107490086B74B /* sys_autoupdater.c */; };
 		A1F9287725BE689700D90626 /* con_tty.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE0178DF8760093DFC0 /* con_tty.c */; };
-		A1F9287825BE689700D90626 /* sys_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE5178DF8760093DFC0 /* sys_osx.m */; };
 		A1F9287925BE689700D90626 /* sys_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE4178DF8760093DFC0 /* sys_main.c */; };
 /* End PBXBuildFile section */
 
@@ -420,6 +432,21 @@
 		A1665967219105430086B74B /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../code/libs/macosx/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		A1665970219107490086B74B /* sys_autoupdater.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_autoupdater.c; sourceTree = "<group>"; };
 		A1665973219341DF0086B74B /* libopus.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libopus.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AF268425DE1501006F8E22 /* libsdl2_0_14_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsdl2_0_14_ios.a; path = ../../code/libs/ios/libsdl2_0_14_ios.a; sourceTree = "<group>"; };
+		A1AF268E25DE16A4006F8E22 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF269225DE16B0006F8E22 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreAudio.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF269625DE1754006F8E22 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF269A25DE1768006F8E22 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF269E25DE1776006F8E22 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26A225DE1781006F8E22 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26A625DE1793006F8E22 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26AA25DE179A006F8E22 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26AE25DE17A0006F8E22 /* CoreHaptics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreHaptics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreHaptics.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26B225DE17AA006F8E22 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26BE25DE185F006F8E22 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		A1AF26C225DE18C5006F8E22 /* sys_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sys_ios.m; sourceTree = "<group>"; };
+		A1AF26C925DE1AAA006F8E22 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		A1AF26CD25DE1ACB006F8E22 /* botlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = botlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F927FC25BE5D6400D90626 /* ioquake3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioquake3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F9280725BE5D6700D90626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F9280A25BE5D6700D90626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -449,6 +476,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AF269F25DE1776006F8E22 /* Foundation.framework in Frameworks */,
+				A1AF26CA25DE1AAE006F8E22 /* libz.tbd in Frameworks */,
+				A1AF26AF25DE17A0006F8E22 /* CoreHaptics.framework in Frameworks */,
+				A1AF269B25DE1768006F8E22 /* QuartzCore.framework in Frameworks */,
+				A1AF26A325DE1781006F8E22 /* GameController.framework in Frameworks */,
+				A1AF26A725DE1793006F8E22 /* CoreGraphics.framework in Frameworks */,
+				A1AF268725DE1517006F8E22 /* libsdl2_0_14_ios.a in Frameworks */,
+				A1AF268F25DE16A4006F8E22 /* UIKit.framework in Frameworks */,
+				A1AF26B325DE17AA006F8E22 /* AudioToolbox.framework in Frameworks */,
+				A1AF26AB25DE179A006F8E22 /* Metal.framework in Frameworks */,
+				A1AF269725DE1754006F8E22 /* AVFoundation.framework in Frameworks */,
+				A1AF26BF25DE185F006F8E22 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +689,20 @@
 		273531EE14D1275D00EB7BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1AF26CD25DE1ACB006F8E22 /* botlib.a */,
+				A1AF26C925DE1AAA006F8E22 /* libz.tbd */,
+				A1AF26BE25DE185F006F8E22 /* CoreMotion.framework */,
+				A1AF26B225DE17AA006F8E22 /* AudioToolbox.framework */,
+				A1AF26AE25DE17A0006F8E22 /* CoreHaptics.framework */,
+				A1AF26AA25DE179A006F8E22 /* Metal.framework */,
+				A1AF26A625DE1793006F8E22 /* CoreGraphics.framework */,
+				A1AF26A225DE1781006F8E22 /* GameController.framework */,
+				A1AF269E25DE1776006F8E22 /* Foundation.framework */,
+				A1AF269A25DE1768006F8E22 /* QuartzCore.framework */,
+				A1AF269625DE1754006F8E22 /* AVFoundation.framework */,
+				A1AF269225DE16B0006F8E22 /* CoreAudio.framework */,
+				A1AF268E25DE16A4006F8E22 /* UIKit.framework */,
+				A1AF268425DE1501006F8E22 /* libsdl2_0_14_ios.a */,
 				A115087325BA520A000CF482 /* libSDL2-2.0.0.dylib */,
 				A1203448257C937600CA384C /* renderer_opengl2.dylib */,
 				A163B25B2193AF1E00C48278 /* renderer_opengl1.dylib */,
@@ -695,11 +748,12 @@
 		27AACFDD178DF85B0093DFC0 /* sys */ = {
 			isa = PBXGroup;
 			children = (
-				A1665970219107490086B74B /* sys_autoupdater.c */,
+				A1AF26C225DE18C5006F8E22 /* sys_ios.m */,
 				27AACFDE178DF8760093DFC0 /* con_log.c */,
 				27AACFDF178DF8760093DFC0 /* con_passive.c */,
 				27AACFE0178DF8760093DFC0 /* con_tty.c */,
 				27AACFE1178DF8760093DFC0 /* con_win32.c */,
+				A1665970219107490086B74B /* sys_autoupdater.c */,
 				27AACFE2178DF8760093DFC0 /* sys_loadlib.h */,
 				27AACFE3178DF8760093DFC0 /* sys_local.h */,
 				27AACFE4178DF8760093DFC0 /* sys_main.c */,
@@ -1071,6 +1125,7 @@
 				A1F9282925BE66CD00D90626 /* cl_scrn.c in Sources */,
 				A1F9283B25BE66CD00D90626 /* cl_console.c in Sources */,
 				A1F9284725BE66F700D90626 /* cm_test.c in Sources */,
+				A1AF26C325DE18C5006F8E22 /* sys_ios.m in Sources */,
 				A1F9286F25BE67BB00D90626 /* sv_snapshot.c in Sources */,
 				A1F9287625BE689700D90626 /* sys_autoupdater.c in Sources */,
 				A1F9283225BE66CD00D90626 /* cl_avi.c in Sources */,
@@ -1080,7 +1135,6 @@
 				A1F9284925BE66F700D90626 /* md5.c in Sources */,
 				A1F9286525BE673E00D90626 /* sdl_snd.c in Sources */,
 				A1F9282A25BE66CD00D90626 /* snd_mem.c in Sources */,
-				A1F9287825BE689700D90626 /* sys_osx.m in Sources */,
 				A1F9286C25BE67BB00D90626 /* sv_init.c in Sources */,
 				A1F9287525BE689700D90626 /* sys_unix.c in Sources */,
 				A1F9282725BE66CD00D90626 /* snd_dma.c in Sources */,
@@ -1176,7 +1230,6 @@
 					"NO_USE_CODEC_VORBIS=0",
 					"NO_USE_CODEC_OPUS=1",
 					"NO_USE_MUMBLE=1",
-					"USE_VOIP=1",
 					"NO_USE_FREETYPE=0",
 					"NO_USE_INTERNAL_SPEEX=1",
 					"NO_USE_INTERNAL_OGG=1",
@@ -1244,7 +1297,6 @@
 					"USE_CURL_DLOPEN=1",
 					"USE_OPENAL=1",
 					"USE_OPENAL_DLOPEN=1",
-					"USE_VOIP=1",
 					"USE_LOCAL_HEADERS=1",
 					"USE_RENDERER_DLOPEN=1",
 				);
@@ -1278,6 +1330,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					MACOS_X,
+					"USE_VOIP=1",
 				);
 				INFOPLIST_FILE = "ioquake3-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -1304,6 +1357,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					MACOS_X,
+					"USE_VOIP=1",
 				);
 				INFOPLIST_FILE = "ioquake3-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -1341,13 +1395,26 @@
 					"DEBUG=1",
 					"$(inherited)",
 					IOS,
+					USE_GLES,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../code/jpeg-8c\"",
+					"\"$(SRCROOT)/../../code/opus-1.2.1/include\"",
+					"\"$(SRCROOT)/../../code/opusfile-0.9/include\"",
+					"\"$(SRCROOT)/../../code/libogg-1.3.3/include\"",
+					"\"$(SRCROOT)/../../code/SDL2/include\"",
+				);
 				INFOPLIST_FILE = "ioquake3-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(SRCROOT)/../../code/libs/ios\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.ioquake3-iOS";
@@ -1383,13 +1450,26 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					IOS,
+					USE_GLES,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../code/jpeg-8c\"",
+					"\"$(SRCROOT)/../../code/opus-1.2.1/include\"",
+					"\"$(SRCROOT)/../../code/opusfile-0.9/include\"",
+					"\"$(SRCROOT)/../../code/libogg-1.3.3/include\"",
+					"\"$(SRCROOT)/../../code/SDL2/include\"",
+				);
 				INFOPLIST_FILE = "ioquake3-ios-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+					"\"$(SRCROOT)/../../code/libs/ios\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.ioquake3-iOS";

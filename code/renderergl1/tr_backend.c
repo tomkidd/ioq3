@@ -719,6 +719,45 @@ void	RB_SetGL2D (void) {
 	backEnd.refdef.floatTime = backEnd.refdef.time * 0.001;
 }
 
+/*
+================
+RB_InstantQuad2
+================
+*/
+void RB_InstantQuad2( vec4_t quadVerts[4], vec2_t texCoords[2] ) {
+	glIndex_t indexes[6];
+
+	qglDisableClientState( GL_COLOR_ARRAY );
+	qglEnableClientState( GL_TEXTURE_COORD_ARRAY );
+
+	qglTexCoordPointer( 2, GL_FLOAT, 0, texCoords );
+	qglVertexPointer( 3, GL_FLOAT, 16, quadVerts );
+
+	indexes[0] = 0;
+	indexes[1] = 1;
+	indexes[2] = 2;
+	indexes[3] = 0;
+	indexes[4] = 2;
+	indexes[5] = 3;
+
+	R_DrawElements( 6, indexes );
+}
+
+/*
+================
+RB_InstantQuad
+===============-
+*/
+void RB_InstantQuad( vec4_t quadVerts[4] ) {
+	vec2_t texCoords[4] = {
+		{ 0, 0 },
+		{ 1, 0 },
+		{ 1, 1 },
+		{ 0, 1 }
+	};
+
+	RB_InstantQuad2( quadVerts, texCoords );
+}
 
 /*
 =============
@@ -771,6 +810,22 @@ void RE_StretchRaw (int x, int y, int w, int h, int cols, int rows, const byte *
 
 	qglColor3f( tr.identityLight, tr.identityLight, tr.identityLight );
 
+#ifdef USE_GLES
+    vec4_t        quadVerts[4];
+    vec2_t        texCoords[4];
+
+    Vector4Set( quadVerts[0], x,     y,     0.0f, 1.0f );
+    Vector4Set( quadVerts[1], x + w, y,     0.0f, 1.0f );
+    Vector4Set( quadVerts[2], x + w, y + h, 0.0f, 1.0f );
+    Vector4Set( quadVerts[3], x,     y + h, 0.0f, 1.0f );
+
+    Vector2Set( texCoords[0], 0.5f / cols,          0.5f / rows );
+    Vector2Set( texCoords[1], (cols - 0.5f) / cols, 0.5f / rows );
+    Vector2Set( texCoords[2], (cols - 0.5f) / cols, (rows - 0.5f) / rows );
+    Vector2Set( texCoords[3], 0.5f / cols,          (rows - 0.5f) / rows );
+
+    RB_InstantQuad2( quadVerts, texCoords );
+#else
 	qglBegin (GL_QUADS);
 	qglTexCoord2f ( 0.5f / cols,  0.5f / rows );
 	qglVertex2f (x, y);
@@ -781,9 +836,11 @@ void RE_StretchRaw (int x, int y, int w, int h, int cols, int rows, const byte *
 	qglTexCoord2f ( 0.5f / cols, ( rows - 0.5f ) / rows );
 	qglVertex2f (x, y+h);
 	qglEnd ();
+#endif
 }
 
 void RE_UploadCinematic (int w, int h, int cols, int rows, const byte *data, int client, qboolean dirty) {
+	byte *buffer;
 
 	GL_Bind( tr.scratchImage[client] );
 
@@ -791,7 +848,19 @@ void RE_UploadCinematic (int w, int h, int cols, int rows, const byte *data, int
 	if ( cols != tr.scratchImage[client]->width || rows != tr.scratchImage[client]->height ) {
 		tr.scratchImage[client]->width = tr.scratchImage[client]->uploadWidth = cols;
 		tr.scratchImage[client]->height = tr.scratchImage[client]->uploadHeight = rows;
-		qglTexImage2D( GL_TEXTURE_2D, 0, GL_RGB8, cols, rows, 0, GL_RGBA, GL_UNSIGNED_BYTE, data );
+
+		// manually convert RGBA to RGB for OpenGL ES
+		if ( qglesMajorVersion >= 1 ) {
+			buffer = ri.Hunk_AllocateTempMemory( 3 * cols * rows );
+
+			R_ConvertTextureFormat( data, cols, rows, GL_RGB, GL_UNSIGNED_BYTE, buffer );
+			qglTexImage2D( GL_TEXTURE_2D, 0, GL_RGB, cols, rows, 0, GL_RGB, GL_UNSIGNED_BYTE, buffer );
+
+			ri.Hunk_FreeTempMemory( buffer );
+		} else {
+			qglTexImage2D( GL_TEXTURE_2D, 0, GL_RGB8, cols, rows, 0, GL_RGBA, GL_UNSIGNED_BYTE, data );
+		}
+
 		qglTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
 		qglTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
 		qglTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, haveClampToEdge ? GL_CLAMP_TO_EDGE : GL_CLAMP );
@@ -800,7 +869,16 @@ void RE_UploadCinematic (int w, int h, int cols, int rows, const byte *data, int
 		if (dirty) {
 			// otherwise, just subimage upload it so that drivers can tell we are going to be changing
 			// it and don't try and do a texture compression
-			qglTexSubImage2D( GL_TEXTURE_2D, 0, 0, 0, cols, rows, GL_RGBA, GL_UNSIGNED_BYTE, data );
+			if ( qglesMajorVersion >= 1 ) {
+				buffer = ri.Hunk_AllocateTempMemory( 3 * cols * rows );
+
+				R_ConvertTextureFormat( data, cols, rows, GL_RGB, GL_UNSIGNED_BYTE, buffer );
+				qglTexSubImage2D( GL_TEXTURE_2D, 0, 0, 0, cols, rows, GL_RGB, GL_UNSIGNED_BYTE, buffer );
+
+				ri.Hunk_FreeTempMemory( buffer );
+			} else {
+				qglTexSubImage2D( GL_TEXTURE_2D, 0, 0, 0, cols, rows, GL_RGBA, GL_UNSIGNED_BYTE, data );
+			}
 		}
 	}
 }
@@ -989,6 +1067,16 @@ void RB_ShowImages( void ) {
 		}
 
 		GL_Bind( image );
+        
+#ifdef USE_GLES
+        vec4_t     quadVerts[4];
+        Vector4Set( quadVerts[0], x, y, 0, 1 );
+        Vector4Set( quadVerts[1], x + w, y, 0, 1 );
+        Vector4Set( quadVerts[2], x + w, y + h, 0, 1 );
+        Vector4Set( quadVerts[3], x, y + h, 0, 1 );
+
+        RB_InstantQuad( quadVerts );
+#else
 		qglBegin (GL_QUADS);
 		qglTexCoord2f( 0, 0 );
 		qglVertex2f( x, y );
@@ -999,6 +1087,7 @@ void RB_ShowImages( void ) {
 		qglTexCoord2f( 0, 1 );
 		qglVertex2f( x, y + h );
 		qglEnd();
+#endif
 	}
 
 	qglFinish();
