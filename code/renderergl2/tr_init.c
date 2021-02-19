@@ -31,6 +31,7 @@ qboolean    textureFilterAnisotropic = qfalse;
 int         maxAnisotropy = 0;
 float       displayAspect = 0.0f;
 qboolean    haveClampToEdge = qfalse;
+qboolean    readFormatAvailable = qfalse;
 
 glstate_t	glState;
 

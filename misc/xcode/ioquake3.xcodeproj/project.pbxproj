@@ -108,6 +108,8 @@
 		A1AF271625DF60E3006F8E22 /* baseq3 in Resources */ = {isa = PBXBuildFile; fileRef = A1AF271525DF60E3006F8E22 /* baseq3 */; };
 		A1AF271E25DF65C6006F8E22 /* librenderer_opengles1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF271D25DF65C6006F8E22 /* librenderer_opengles1.a */; };
 		A1AF276B25DF6962006F8E22 /* libjpeg8-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */; };
+		A1AF277025DF6D42006F8E22 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD026178E013E0093DFC0 /* sdl_glimp.c */; };
+		A1AF277125DF6D43006F8E22 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD026178E013E0093DFC0 /* sdl_glimp.c */; };
 		A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280725BE5D6700D90626 /* Assets.xcassets */; };
 		A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */; };
 		A1F9282025BE669E00D90626 /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7D178FA97100B17C7A /* ftola.c */; };
@@ -1079,6 +1081,7 @@
 				2711BED714D137BC005EB142 /* cl_parse.c in Sources */,
 				2711BED814D137BC005EB142 /* cl_scrn.c in Sources */,
 				2711BED914D137BC005EB142 /* cl_ui.c in Sources */,
+				A1AF277125DF6D43006F8E22 /* sdl_glimp.c in Sources */,
 				2711BEDA14D137BC005EB142 /* snd_adpcm.c in Sources */,
 				2711BEDB14D137BC005EB142 /* snd_dma.c in Sources */,
 				2711BEDC14D137BC005EB142 /* snd_mem.c in Sources */,
@@ -1183,6 +1186,7 @@
 				A1F9287125BE67BB00D90626 /* sv_game.c in Sources */,
 				A1F9285925BE66FC00D90626 /* vm_interpreted.c in Sources */,
 				A1F9282B25BE66CD00D90626 /* snd_codec_wav.c in Sources */,
+				A1AF277025DF6D42006F8E22 /* sdl_glimp.c in Sources */,
 				A1F9284F25BE66F700D90626 /* files.c in Sources */,
 				A1F9283025BE66CD00D90626 /* snd_mix.c in Sources */,
 				A1F9283C25BE66CD00D90626 /* cl_net_chan.c in Sources */,
