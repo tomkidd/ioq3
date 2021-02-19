@@ -103,6 +103,11 @@
 		A1AF26BF25DE185F006F8E22 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26BE25DE185F006F8E22 /* CoreMotion.framework */; };
 		A1AF26C325DE18C5006F8E22 /* sys_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AF26C225DE18C5006F8E22 /* sys_ios.m */; };
 		A1AF26CA25DE1AAE006F8E22 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF26C925DE1AAA006F8E22 /* libz.tbd */; };
+		A1AF270925DE1FC8006F8E22 /* botlib-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF270825DE1FC8006F8E22 /* botlib-ios.a */; };
+		A1AF270E25DE20A3006F8E22 /* sys_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE4178DF8760093DFC0 /* sys_main.c */; };
+		A1AF271625DF60E3006F8E22 /* baseq3 in Resources */ = {isa = PBXBuildFile; fileRef = A1AF271525DF60E3006F8E22 /* baseq3 */; };
+		A1AF271E25DF65C6006F8E22 /* librenderer_opengles1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF271D25DF65C6006F8E22 /* librenderer_opengles1.a */; };
+		A1AF276B25DF6962006F8E22 /* libjpeg8-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */; };
 		A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280725BE5D6700D90626 /* Assets.xcassets */; };
 		A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */; };
 		A1F9282025BE669E00D90626 /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7D178FA97100B17C7A /* ftola.c */; };
@@ -171,7 +176,6 @@
 		A1F9287525BE689700D90626 /* sys_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE6178DF8760093DFC0 /* sys_unix.c */; };
 		A1F9287625BE689700D90626 /* sys_autoupdater.c in Sources */ = {isa = PBXBuildFile; fileRef = A1665970219107490086B74B /* sys_autoupdater.c */; };
 		A1F9287725BE689700D90626 /* con_tty.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE0178DF8760093DFC0 /* con_tty.c */; };
-		A1F9287925BE689700D90626 /* sys_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AACFE4178DF8760093DFC0 /* sys_main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -447,6 +451,10 @@
 		A1AF26C225DE18C5006F8E22 /* sys_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sys_ios.m; sourceTree = "<group>"; };
 		A1AF26C925DE1AAA006F8E22 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		A1AF26CD25DE1ACB006F8E22 /* botlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = botlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AF270825DE1FC8006F8E22 /* botlib-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "botlib-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AF271525DF60E3006F8E22 /* baseq3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq3; path = "../../../../../Library/Application Support/Quake3/baseq3"; sourceTree = "<group>"; };
+		A1AF271D25DF65C6006F8E22 /* librenderer_opengles1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = librenderer_opengles1.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libjpeg8-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F927FC25BE5D6400D90626 /* ioquake3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioquake3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F9280725BE5D6700D90626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F9280A25BE5D6700D90626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -477,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AF269F25DE1776006F8E22 /* Foundation.framework in Frameworks */,
+				A1AF276B25DF6962006F8E22 /* libjpeg8-ios.a in Frameworks */,
 				A1AF26CA25DE1AAE006F8E22 /* libz.tbd in Frameworks */,
 				A1AF26AF25DE17A0006F8E22 /* CoreHaptics.framework in Frameworks */,
 				A1AF269B25DE1768006F8E22 /* QuartzCore.framework in Frameworks */,
@@ -485,9 +494,11 @@
 				A1AF268725DE1517006F8E22 /* libsdl2_0_14_ios.a in Frameworks */,
 				A1AF268F25DE16A4006F8E22 /* UIKit.framework in Frameworks */,
 				A1AF26B325DE17AA006F8E22 /* AudioToolbox.framework in Frameworks */,
+				A1AF271E25DF65C6006F8E22 /* librenderer_opengles1.a in Frameworks */,
 				A1AF26AB25DE179A006F8E22 /* Metal.framework in Frameworks */,
 				A1AF269725DE1754006F8E22 /* AVFoundation.framework in Frameworks */,
 				A1AF26BF25DE185F006F8E22 /* CoreMotion.framework in Frameworks */,
+				A1AF270925DE1FC8006F8E22 /* botlib-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +680,7 @@
 		273531E014D1275D00EB7BD6 = {
 			isa = PBXGroup;
 			children = (
+				A1AF271525DF60E3006F8E22 /* baseq3 */,
 				2711BE6A14D1364A005EB142 /* code */,
 				273531EE14D1275D00EB7BD6 /* Frameworks */,
 				2711BCC414D12CC6005EB142 /* Libraries */,
@@ -689,6 +701,9 @@
 		273531EE14D1275D00EB7BD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */,
+				A1AF271D25DF65C6006F8E22 /* librenderer_opengles1.a */,
+				A1AF270825DE1FC8006F8E22 /* botlib-ios.a */,
 				A1AF26CD25DE1ACB006F8E22 /* botlib.a */,
 				A1AF26C925DE1AAA006F8E22 /* libz.tbd */,
 				A1AF26BE25DE185F006F8E22 /* CoreMotion.framework */,
@@ -1000,6 +1015,7 @@
 			files = (
 				A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */,
 				A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */,
+				A1AF271625DF60E3006F8E22 /* baseq3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1162,7 +1178,7 @@
 				A1F9283425BE66CD00D90626 /* cl_cin.c in Sources */,
 				A1F9285025BE66F700D90626 /* huffman.c in Sources */,
 				A1F9283625BE66CD00D90626 /* cl_ui.c in Sources */,
-				A1F9287925BE689700D90626 /* sys_main.c in Sources */,
+				A1AF270E25DE20A3006F8E22 /* sys_main.c in Sources */,
 				A1F9284E25BE66F700D90626 /* common.c in Sources */,
 				A1F9287125BE67BB00D90626 /* sv_game.c in Sources */,
 				A1F9285925BE66FC00D90626 /* vm_interpreted.c in Sources */,
@@ -1237,7 +1253,6 @@
 					"NO_USE_INTERNAL_ZLIB=1",
 					"NO_USE_INTERNAL_JPEG=1",
 					"USE_LOCAL_HEADERS=1",
-					"USE_RENDERER_DLOPEN=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -1298,7 +1313,6 @@
 					"USE_OPENAL=1",
 					"USE_OPENAL_DLOPEN=1",
 					"USE_LOCAL_HEADERS=1",
-					"USE_RENDERER_DLOPEN=1",
 				);
 				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
@@ -1331,6 +1345,7 @@
 					"$(inherited)",
 					MACOS_X,
 					"USE_VOIP=1",
+					"USE_RENDERER_DLOPEN=1",
 				);
 				INFOPLIST_FILE = "ioquake3-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -1358,6 +1373,7 @@
 					"$(inherited)",
 					MACOS_X,
 					"USE_VOIP=1",
+					"USE_RENDERER_DLOPEN=1",
 				);
 				INFOPLIST_FILE = "ioquake3-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
@@ -1396,6 +1412,7 @@
 					"$(inherited)",
 					IOS,
 					USE_GLES,
+					USE_STATIC,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1451,6 +1468,7 @@
 					"$(inherited)",
 					IOS,
 					USE_GLES,
+					USE_STATIC,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;

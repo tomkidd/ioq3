@@ -429,6 +429,8 @@ void Sys_Print( const char *msg )
 Sys_Error
 =================
 */
+// TODO: figure out how to make this different -tkidd
+#ifndef IOS
 void Sys_Error( const char *error, ... )
 {
 	va_list argptr;
@@ -442,6 +444,7 @@ void Sys_Error( const char *error, ... )
 
 	Sys_Exit( 3 );
 }
+#endif
 
 #if 0
 /*
@@ -506,8 +509,12 @@ from executable path, then fs_basepath.
 
 void *Sys_LoadDll(const char *name, qboolean useSystemLib)
 {
-	void *dllhandle = NULL;
-
+#ifdef USE_STATIC
+    char *game = Cvar_VariableString("fs_game");
+    Com_Printf("Sys_LoadDll(%s) could not find appropriate entry point for game %s\n", name, game);
+    return NULL;
+#else
+    void *dllhandle = NULL;
 	if(!Sys_DllExtension(name))
 	{
 		Com_Printf("Refusing to attempt to load library \"%s\": Extension not allowed.\n", name);
@@ -569,6 +576,7 @@ void *Sys_LoadDll(const char *name, qboolean useSystemLib)
 	}
 	
 	return dllhandle;
+#endif
 }
 
 /*

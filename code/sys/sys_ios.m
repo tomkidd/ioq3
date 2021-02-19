@@ -19,9 +19,9 @@
 #include <SDL_syswm.h>
 
 
-qboolean Sys_LowPhysicalMemory(void) {
-    return qtrue;
-}
+//qboolean Sys_LowPhysicalMemory(void) {
+//    return qtrue;
+//}
 
 void Sys_UnloadGame() {
 }
