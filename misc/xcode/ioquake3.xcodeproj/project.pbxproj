@@ -110,6 +110,7 @@
 		A1AF276B25DF6962006F8E22 /* libjpeg8-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */; };
 		A1AF277025DF6D42006F8E22 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD026178E013E0093DFC0 /* sdl_glimp.c */; };
 		A1AF277125DF6D43006F8E22 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD026178E013E0093DFC0 /* sdl_glimp.c */; };
+		A1F31840260012E300A11B0E /* vm_none.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD01E178E01160093DFC0 /* vm_none.c */; };
 		A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280725BE5D6700D90626 /* Assets.xcassets */; };
 		A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */; };
 		A1F9282025BE669E00D90626 /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7D178FA97100B17C7A /* ftola.c */; };
@@ -160,7 +161,6 @@
 		A1F9285525BE66F700D90626 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9314D136DF005EB142 /* md4.c */; };
 		A1F9285625BE66F700D90626 /* net_ip.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD012178E00C30093DFC0 /* net_ip.c */; };
 		A1F9285925BE66FC00D90626 /* vm_interpreted.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9A14D136DF005EB142 /* vm_interpreted.c */; };
-		A1F9285C25BE670E00D90626 /* vm_x86.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9E14D136DF005EB142 /* vm_x86.c */; };
 		A1F9285D25BE670E00D90626 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = 2711BE9F14D136DF005EB142 /* vm.c */; };
 		A1F9286225BE672800D90626 /* tr_noise.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD064178E03620093DFC0 /* tr_noise.c */; };
 		A1F9286525BE673E00D90626 /* sdl_snd.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD029178E013E0093DFC0 /* sdl_snd.c */; };
@@ -1149,7 +1149,6 @@
 				A1F9287625BE689700D90626 /* sys_autoupdater.c in Sources */,
 				A1F9283225BE66CD00D90626 /* cl_avi.c in Sources */,
 				A1F9283925BE66CD00D90626 /* snd_codec_ogg.c in Sources */,
-				A1F9285C25BE670E00D90626 /* vm_x86.c in Sources */,
 				A1F9284425BE66F700D90626 /* cm_patch.c in Sources */,
 				A1F9284925BE66F700D90626 /* md5.c in Sources */,
 				A1F9286525BE673E00D90626 /* sdl_snd.c in Sources */,
@@ -1185,6 +1184,7 @@
 				A1F9284E25BE66F700D90626 /* common.c in Sources */,
 				A1F9287125BE67BB00D90626 /* sv_game.c in Sources */,
 				A1F9285925BE66FC00D90626 /* vm_interpreted.c in Sources */,
+				A1F31840260012E300A11B0E /* vm_none.c in Sources */,
 				A1F9282B25BE66CD00D90626 /* snd_codec_wav.c in Sources */,
 				A1AF277025DF6D42006F8E22 /* sdl_glimp.c in Sources */,
 				A1F9284F25BE66F700D90626 /* files.c in Sources */,
@@ -1417,6 +1417,7 @@
 					IOS,
 					USE_GLES,
 					USE_STATIC,
+					NO_VM_COMPILED,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1473,6 +1474,7 @@
 					IOS,
 					USE_GLES,
 					USE_STATIC,
+					NO_VM_COMPILED,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
