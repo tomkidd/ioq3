@@ -108,6 +108,11 @@
 		A1AF276B25DF6962006F8E22 /* libjpeg8-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */; };
 		A1AF277025DF6D42006F8E22 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD026178E013E0093DFC0 /* sdl_glimp.c */; };
 		A1AF277125DF6D43006F8E22 /* sdl_glimp.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD026178E013E0093DFC0 /* sdl_glimp.c */; };
+		A1CD99CC263A6A72003EB6ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1CD99CA263A6A72003EB6ED /* Main.storyboard */; };
+		A1CD99CE263A6AD6003EB6ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1CD99CD263A6AD6003EB6ED /* AppDelegate.m */; };
+		A1CD99D2263A6B96003EB6ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CD99D1263A6B96003EB6ED /* GameViewController.swift */; };
+		A1CD99D3263A75D1003EB6ED /* ftola.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB7D178FA97100B17C7A /* ftola.c */; };
+		A1CD99D4263A75E6003EB6ED /* snapvector.c in Sources */ = {isa = PBXBuildFile; fileRef = 274FAB81178FA97100B17C7A /* snapvector.c */; };
 		A1F31840260012E300A11B0E /* vm_none.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AAD01E178E01160093DFC0 /* vm_none.c */; };
 		A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280725BE5D6700D90626 /* Assets.xcassets */; };
 		A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */; };
@@ -455,6 +460,11 @@
 		A1AF271525DF60E3006F8E22 /* baseq3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = baseq3; path = "../../../../../Library/Application Support/Quake3/baseq3"; sourceTree = "<group>"; };
 		A1AF271D25DF65C6006F8E22 /* librenderer_opengles1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = librenderer_opengles1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AF276A25DF6962006F8E22 /* libjpeg8-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libjpeg8-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CD99CB263A6A72003EB6ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1CD99CD263A6AD6003EB6ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1CD99CF263A6AE6003EB6ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1CD99D0263A6B95003EB6ED /* ioquake3-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ioquake3-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1CD99D1263A6B96003EB6ED /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A1F927FC25BE5D6400D90626 /* ioquake3-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ioquake3-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F9280725BE5D6700D90626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F9280A25BE5D6700D90626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -740,6 +750,11 @@
 				A1403E57256F15E700DFAD74 /* Images.xcassets */,
 				273531F714D1275D00EB7BD6 /* ioquake3-Info.plist */,
 				273531FD14D1275D00EB7BD6 /* ioquake3-Prefix.pch */,
+				A1CD99CA263A6A72003EB6ED /* Main.storyboard */,
+				A1CD99CD263A6AD6003EB6ED /* AppDelegate.m */,
+				A1CD99CF263A6AE6003EB6ED /* AppDelegate.h */,
+				A1CD99D1263A6B96003EB6ED /* GameViewController.swift */,
+				A1CD99D0263A6B95003EB6ED /* ioquake3-iOS-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -977,6 +992,7 @@
 					A1F927FB25BE5D6400D90626 = {
 						CreatedOnToolsVersion = 12.3;
 						DevelopmentTeam = 9UY8SFDNQ8;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1016,6 +1032,7 @@
 				A1F9280B25BE5D6700D90626 /* LaunchScreen.storyboard in Resources */,
 				A1F9280825BE5D6700D90626 /* Assets.xcassets in Resources */,
 				A1AF271625DF60E3006F8E22 /* baseq3 in Resources */,
+				A1CD99CC263A6A72003EB6ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,8 +1116,8 @@
 				27AAD00C178E006E0093DFC0 /* snd_codec.c in Sources */,
 				27AAD00E178E007B0093DFC0 /* snd_openal.c in Sources */,
 				27AAD011178E00AB0093DFC0 /* ioapi.c in Sources */,
+				A1CD99D3263A75D1003EB6ED /* ftola.c in Sources */,
 				27AAD013178E00C30093DFC0 /* net_ip.c in Sources */,
-				A1F3185E2603127800A11B0E /* ftola.c in Sources */,
 				27AAD016178E00CE0093DFC0 /* puff.c in Sources */,
 				27AAD01B178E00E80093DFC0 /* q_math.c in Sources */,
 				27AAD01C178E00E80093DFC0 /* q_shared.c in Sources */,
@@ -1112,7 +1129,7 @@
 				274FAB8A178FA9AA00B17C7A /* matha.s in Sources */,
 				274FABFD178FAC4900B17C7A /* vm_x86.c in Sources */,
 				274FABFE178FAC6E00B17C7A /* tr_noise.c in Sources */,
-				A1F318612603128500A11B0E /* snapvector.c in Sources */,
+				A1CD99D4263A75E6003EB6ED /* snapvector.c in Sources */,
 				278714D917911C1300094CA3 /* libmumblelink.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1126,6 +1143,7 @@
 				A1F9285D25BE670E00D90626 /* vm.c in Sources */,
 				A1F9286225BE672800D90626 /* tr_noise.c in Sources */,
 				A1F9283525BE66CD00D90626 /* cl_keys.c in Sources */,
+				A1CD99D2263A6B96003EB6ED /* GameViewController.swift in Sources */,
 				A1F9285325BE66F700D90626 /* q_math.c in Sources */,
 				A1F9286625BE673E00D90626 /* sdl_input.c in Sources */,
 				A1F9283125BE66CD00D90626 /* snd_codec.c in Sources */,
@@ -1155,6 +1173,7 @@
 				A1F9287525BE689700D90626 /* sys_unix.c in Sources */,
 				A1F9282725BE66CD00D90626 /* snd_dma.c in Sources */,
 				A1F9282325BE66B400D90626 /* snapvector.c in Sources */,
+				A1CD99CE263A6AD6003EB6ED /* AppDelegate.m in Sources */,
 				A1F9286B25BE67BB00D90626 /* sv_client.c in Sources */,
 				A1F9286A25BE67BB00D90626 /* sv_ccmds.c in Sources */,
 				A1F9285125BE66F700D90626 /* cm_trace.c in Sources */,
@@ -1196,6 +1215,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A1CD99CA263A6A72003EB6ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1CD99CB263A6A72003EB6ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		A1F9280925BE5D6700D90626 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1416,6 +1443,7 @@
 					USE_GLES,
 					USE_STATIC,
 					NO_VM_COMPILED,
+					MOBILE,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1441,6 +1469,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "ioquake3-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1473,6 +1502,7 @@
 					USE_GLES,
 					USE_STATIC,
 					NO_VM_COMPILED,
+					MOBILE,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1497,6 +1527,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.ioquake3.ioquake3-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ioquake3-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -430,7 +430,7 @@ Sys_Error
 =================
 */
 // TODO: figure out how to make this different -tkidd
-#ifndef IOS
+#ifndef MOBILE
 void Sys_Error( const char *error, ... )
 {
 	va_list argptr;
@@ -694,7 +694,11 @@ void Sys_SigHandler( int signal )
 main
 =================
 */
+#ifdef MOBILE
+void Sys_Startup( int argc, char **argv )
+#else
 int main( int argc, char **argv )
+#endif // MOBILE
 {
 	int   i;
 	char  commandLine[ MAX_STRING_CHARS ] = { 0 };
@@ -774,7 +778,8 @@ int main( int argc, char **argv )
 	{
 		Com_Frame( );
 	}
-
+#ifndef MOBILE
 	return 0;
+#endif
 }
 

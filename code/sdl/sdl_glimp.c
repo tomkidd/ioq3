@@ -454,6 +454,10 @@ static int GLimp_SetMode(int mode, qboolean fullscreen, qboolean noborder, qbool
 #endif
 			);
 #endif
+    
+#ifdef MOBILE
+    SDL_window = NULL;
+#endif
 
 	// If a window exists, note its display index
 	if( SDL_window != NULL )
@@ -1106,6 +1110,7 @@ void GLimp_Init( qboolean fixedFunction )
 	r_centerWindow = ri.Cvar_Get( "r_centerWindow", "0", CVAR_ARCHIVE | CVAR_LATCH );
 	r_useOpenGLES = ri.Cvar_Get( "r_useOpenGLES", "-1", CVAR_NORESTART | CVAR_LATCH );
 
+#ifndef MOBILE
 	if( ri.Cvar_VariableIntegerValue( "com_abnormalExit" ) )
 	{
 		ri.Cvar_Set( "r_mode", va( "%d", R_MODE_FALLBACK ) );
@@ -1113,6 +1118,7 @@ void GLimp_Init( qboolean fixedFunction )
 		ri.Cvar_Set( "r_centerWindow", "0" );
 		ri.Cvar_Set( "com_abnormalExit", "0" );
 	}
+#endif
 
 	ri.Sys_GLimpInit( );
 

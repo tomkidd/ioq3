@@ -119,3 +119,12 @@ char *Sys_StripAppBundle( char *dir )
  ==============
  */
 dialogResult_t Sys_Dialog( dialogType_t type, const char *message, const char *title ) { return 0; }
+
+// Used to determine where to store user-specific files
+static char homePath[ MAX_OSPATH ] = { 0 };
+
+void Sys_SetHomeDir( const char* newHomeDir )
+{
+    Q_strncpyz(homePath, newHomeDir, sizeof(homePath));
+    Q_strcat(homePath, sizeof(homePath), "/");
+}
