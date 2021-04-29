@@ -98,8 +98,7 @@ class GameViewController: UIViewController {
             argv.append("1")
             
             let screenBounds = UIScreen.main.bounds
-            //let screenScale:CGFloat = UIScreen.main.scale
-            let screenScale:CGFloat = 1
+            let screenScale:CGFloat = UIScreen.main.scale
             let screenSize = CGSize(width: screenBounds.size.width * screenScale, height: screenBounds.size.height * screenScale)
 
             argv.append("+set")
