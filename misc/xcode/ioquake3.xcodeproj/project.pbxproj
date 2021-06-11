@@ -1118,6 +1118,7 @@
 				27AAD011178E00AB0093DFC0 /* ioapi.c in Sources */,
 				A1CD99D3263A75D1003EB6ED /* ftola.c in Sources */,
 				27AAD013178E00C30093DFC0 /* net_ip.c in Sources */,
+				A1F3185E2603127800A11B0E /* ftola.c in Sources */,
 				27AAD016178E00CE0093DFC0 /* puff.c in Sources */,
 				27AAD01B178E00E80093DFC0 /* q_math.c in Sources */,
 				27AAD01C178E00E80093DFC0 /* q_shared.c in Sources */,
