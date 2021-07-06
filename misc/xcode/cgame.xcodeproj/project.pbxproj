@@ -450,6 +450,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = baseq3/cgame;
 			};
 			name = Debug;
@@ -461,6 +462,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = baseq3/cgame;
 			};
 			name = Release;
@@ -477,6 +479,7 @@
 					MISSIONPACK,
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = missionpack/cgame;
 			};
 			name = Debug;
@@ -489,6 +492,7 @@
 				EXECUTABLE_PREFIX = "";
 				GCC_PREPROCESSOR_DEFINITIONS = MISSIONPACK;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = missionpack/cgame;
 			};
 			name = Release;

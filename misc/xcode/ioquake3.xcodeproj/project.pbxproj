@@ -1118,7 +1118,6 @@
 				27AAD011178E00AB0093DFC0 /* ioapi.c in Sources */,
 				A1CD99D3263A75D1003EB6ED /* ftola.c in Sources */,
 				27AAD013178E00C30093DFC0 /* net_ip.c in Sources */,
-				A1F3185E2603127800A11B0E /* ftola.c in Sources */,
 				27AAD016178E00CE0093DFC0 /* puff.c in Sources */,
 				27AAD01B178E00E80093DFC0 /* q_math.c in Sources */,
 				27AAD01C178E00E80093DFC0 /* q_shared.c in Sources */,
@@ -1457,7 +1456,7 @@
 					"\"$(SRCROOT)/../../code/SDL2/include\"",
 				);
 				INFOPLIST_FILE = "ioquake3-ios-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1516,7 +1515,7 @@
 					"\"$(SRCROOT)/../../code/SDL2/include\"",
 				);
 				INFOPLIST_FILE = "ioquake3-ios-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

@@ -521,6 +521,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = missionpack/ui;
 			};
 			name = Debug;
@@ -532,6 +533,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = missionpack/ui;
 			};
 			name = Release;
@@ -547,6 +549,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = baseq3/ui;
 			};
 			name = Debug;
@@ -559,6 +562,7 @@
 				EXECUTABLE_PREFIX = "";
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = baseq3/ui;
 			};
 			name = Release;
