@@ -348,7 +348,9 @@ static void IN_ActivateMouse( qboolean isFullscreen )
 
 	if( !mouseActive )
 	{
+#ifndef MOBILE
 		SDL_SetRelativeMouseMode( SDL_TRUE );
+#endif
 		SDL_SetWindowGrab( SDL_window, SDL_TRUE );
 
 		IN_GobbleMotionEvents( );
@@ -1153,6 +1155,31 @@ static void IN_ProcessEvents( void )
 					case SDL_WINDOWEVENT_FOCUS_GAINED: Cvar_SetValue( "com_unfocused", 0 ); break;
 				}
 				break;
+                
+                case SDL_FINGERDOWN:
+                case SDL_FINGERUP:
+                    if (Key_GetCatcher( ) & KEYCATCH_UI) {
+                        
+                        float ratio43 = 640.0f / 480.0f;
+                        float ratio = (float)cls.glconfig.vidWidth / (float)cls.glconfig.vidHeight;
+                        
+                        // If we're not on a 4:3 screen, do the math to figure out how to
+                        // translate coordinates to a 4:3 equivalent
+                        if (ratio43 != ratio) {
+                            float width43 = 480 * ratio;
+                            float gap = 0.5 * (width43 - (480.0f*(640.0f/480.0f)));
+                            float finger = (e.tfinger.x * width43);
+                            float fingerMinusGap = (e.tfinger.x * width43) - gap;
+
+                            CL_MouseEvent(fingerMinusGap, e.tfinger.y * 480, Sys_Milliseconds(), qtrue);
+                        } else {
+                            CL_MouseEvent(e.tfinger.x * 640, e.tfinger.y * 480, Sys_Milliseconds(), qtrue);
+                        }
+                        
+                        Com_QueueEvent( in_eventTime, SE_KEY, K_MOUSE1,
+                            ( e.type == SDL_FINGERDOWN ? qtrue : qfalse ), 0, NULL );
+                    }
+                    break;
 
 			default:
 				break;
@@ -1236,7 +1263,12 @@ void IN_Init( void *windowData )
 	in_joystick = Cvar_Get( "in_joystick", "0", CVAR_ARCHIVE|CVAR_LATCH );
 	in_joystickThreshold = Cvar_Get( "joy_threshold", "0.15", CVAR_ARCHIVE );
 
+#ifndef MOBILE
 	SDL_StartTextInput( );
+#else
+    SDL_SetHint(SDL_HINT_ACCELEROMETER_AS_JOYSTICK, "0");
+    SDL_SetHint(SDL_HINT_TOUCH_MOUSE_EVENTS, "0");
+#endif
 
 	mouseAvailable = ( in_mouse->value != 0 );
 	IN_DeactivateMouse( Cvar_VariableIntegerValue( "r_fullscreen" ) != 0 );
