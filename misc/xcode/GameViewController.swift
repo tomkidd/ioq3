@@ -192,7 +192,7 @@ class GameViewController: UIViewController {
             let argc:Int32 = Int32(argv.count - 1)
             var cargs = argv.map { $0.flatMap { UnsafeMutablePointer<Int8>(strdup($0)) } }
             
-            Sys_Startup(argc, &cargs)
+//            Sys_Startup(argc, &cargs)
             
             for ptr in cargs { free(UnsafeMutablePointer(mutating: ptr)) }
         }

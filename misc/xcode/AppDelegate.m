@@ -42,6 +42,8 @@
    return NO;
 }
 
+void Sys_Startup( int argc, char **argv );
+
 // override the direct execution of SDL_main to allow us to implement our own frontend
 - (void)postFinishLaunch
 {
@@ -57,6 +59,80 @@
     self.uiwindow.rootViewController = self.rootNavigationController;
     
     [self.uiwindow makeKeyAndVisible];
+    
+    int argc = 67;
+    
+    char *argv[] = {
+        "quake3",
+        "+set",
+        "com_basegame",
+        "baseq3",
+        "+set",
+        "r_useOpenGLES",
+        "1",
+        "+set",
+        "r_mode",
+        "-1",
+        "+set",
+        "r_customwidth",
+        (char *)[[NSString stringWithFormat:@"%i", (int)[[UIScreen mainScreen] nativeBounds].size.height] UTF8String],
+        "+set",
+        "r_customheight",
+        (char *)[[NSString stringWithFormat:@"%i", (int)[[UIScreen mainScreen] nativeBounds].size.width] UTF8String],
+        "+set",
+        "s_sdlSpeed",
+        "44100",
+        "+set",
+        "r_useHiDPI",
+        "1",
+        "+set",
+        "r_fullscreen",
+        "1",
+        "+set",
+        "in_joystick",
+        "1",
+        "+set",
+        "in_joystickUseAnalog",
+        "1",
+        "+bind",
+        "PAD0_RIGHTTRIGGER",
+        "\"+attack\"",
+        "+bind",
+        "PAD0_LEFTSTICK_UP",
+        "\"+forward\"",
+        "+bind",
+        "PAD0_LEFTSTICK_DOWN",
+        "\"+back\"",
+        "+bind",
+        "PAD0_LEFTSTICK_LEFT",
+        "\"+moveleft\"",
+        "+bind",
+        "PAD0_LEFTSTICK_RIGHT",
+        "\"+moveright\"",
+        "+bind",
+        "PAD0_RIGHTSTICK_UP",
+        "\"+lookup\"",
+        "+bind",
+        "PAD0_RIGHTSTICK_DOWN",
+        "\"+lookdown\"",
+        "+bind",
+        "PAD0_RIGHTSTICK_LEFT",
+        "\"+left\"",
+        "+bind",
+        "PAD0_RIGHTSTICK_RIGHT",
+        "\"+right\"",
+        "+bind",
+        "PAD0_A",
+        "\"+moveup\"",
+        "+bind",
+        "PAD0_LEFTSHOULDER",
+        "\"weapnext\"",
+        "+bind",
+        "PAD0_RIGHTSHOULDER",
+        "\"weapprev\"",
+    };
+    
+    Sys_Startup(argc, argv);
 }
 
 - (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
