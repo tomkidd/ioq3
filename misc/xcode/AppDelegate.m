@@ -7,11 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#if TARGET_OS_TV
-#import "ioquake3_tvOS-Swift.h"
-#else
-#import "ioquake3_iOS-Swift.h"
-#endif
+//#if TARGET_OS_TV
+//#import "ioquake3_tvOS-Swift.h"
+//#else
+//#import "ioquake3_iOS-Swift.h"
+//#endif
 
 @implementation SDLUIKitDelegate (customDelegate)
 
@@ -52,13 +52,17 @@ void Sys_Startup( int argc, char **argv );
     self.uiwindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.uiwindow.backgroundColor = [UIColor blackColor];
     
-    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
-
-    rootNavigationController = (UINavigationController *)[mainStoryboard instantiateViewControllerWithIdentifier:@"RootNC"];
-
-    self.uiwindow.rootViewController = self.rootNavigationController;
-    
     [self.uiwindow makeKeyAndVisible];
+    
+    // TODO: Make the Obj-C equiv of this
+    
+//#if os(tvOS)
+//let documentsDir = try! FileManager().url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
+//#else
+//let documentsDir = try! FileManager().url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).path
+//#endif
+//
+//Sys_SetHomeDir(documentsDir)
     
     int argc = 67;
     
